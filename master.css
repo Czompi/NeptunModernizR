@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap';
 :root {
     --nmr-color-light-100: hsl(330, 0%, 90%);
     --nmr-color-light-200: hsl(330, 0%, 80%);
@@ -15,6 +16,7 @@
     --nmr-color-gadget-header-background: var(--nmr-color-primary-100);
     --nmr-color-gadget-border: var(--nmr-color-primary-100);
     --nmr-color-gadget-background: var(--nmr-color-white-text);
+    --nmr-color-nav-item-foreground: var(--nmr-color-white-text);
 }
 /* #region Remove neptun's default theme elements */
 table.Gadget .HeaderLeftCorner,
@@ -51,7 +53,58 @@ table.Gadget .GadgetFooterMenu {
 
 html {
     background-color: var(--nmr-color-light-100);
+    font-family: Comfortaa;
 }
+* {
+    font-family: Comfortaa;
+}
+a,
+a:hover {
+    color: var(--nmr-color-primary-100);
+    font-weight: normal;
+}
+/* #region Header */
+.top_training,
+.top_logout {
+    color: var(--nmr-color-white-text);
+}
+.top_menu_wrapper {
+    background: var(--nmr-color-light-200);
+}
+.top_menu_wrapper .top_menu_left,
+.top_menu_wrapper .top_menu_mid,
+.top_menu_wrapper .top_menu_right,
+.top_menu_wrapper .menubar .menu-parent {
+    background-image: unset !important;
+}
+.top_menu_wrapper .menubar .menu-parent {
+    color: var(--nmr-color-nav-item-foreground);
+    font-family: Comfortaa;
+}
+.top_menu_wrapper .menu {
+    left: unset !important;
+}
+.top_menu_wrapper .menu .menuitemfirst,
+.top_menu_wrapper .menu .menuitemlast {
+    background-image: unset !important;
+    padding-bottom: unset !important;
+    padding-top: unset !important;
+}
+.top_menu_wrapper .menu .menu-item {
+    border-left-color: unset;
+    border-left-width: unset;
+    border-left-style: unset;
+    border-right-color: unset;
+    border-right-width: unset;
+    border-right-style: unset;
+}
+.top_menu_wrapper .menu .menu-hover{
+    background-image: unset !important;
+    background: var(--nmr-color-primary-100);
+}
+/* #endregion */
+/* #region Gadget */
+
 table.Gadget > tbody > tr:first-of-type {
     background: var(--nmr-color-gadget-header-background);
 }
@@ -73,3 +126,4 @@ table.Gadget .GadgetMenuItem:hover, .mainfunction_item:hover {
 table.Gadget .GadgetFooterMenu > * {
     vertical-align: middle;
 }
+/* #endregion */
