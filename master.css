@@ -27,7 +27,7 @@ table.Gadget .gadgetbodyright {
     padding-left: unset !important;
 }
 
-table.Gadget .GadgetMenuItem, .mainfunction_item
+table.Gadget .GadgetMenuItem, .mainfunction_item,
 table.Gadget .GadgetMenuItem:hover, .mainfunction_item:hover {
     -webkit-box-shadow: unset;
     box-shadow: unset;
