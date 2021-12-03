@@ -16,7 +16,7 @@
     --nmr-color-gadget-header-background: var(--nmr-color-primary-100);
     --nmr-color-gadget-border: var(--nmr-color-primary-100);
     --nmr-color-gadget-background: var(--nmr-color-light-200);
-    --nmr-color-nav-item-foreground: var(--nmr-color-light-200);
+    --nmr-color-nav-item-foreground: var(--nmr-color-white-text);
 }
 /* #region Remove neptun's default theme elements */
 table.Gadget {
@@ -83,7 +83,8 @@ a:hover {
 }
 .top_menu_wrapper .menubar .menu-parent {
     color: var(--nmr-color-nav-item-foreground);
-    font-family: Comfortaa;
+    font-weight: unset;
+    font-family: unset;
 }
 .top_menu_wrapper .menu {
     left: unset !important;
@@ -141,7 +142,7 @@ table.Gadget .GadgetFooterMenu > * {
 }
 /* #endregion */
 
-/* #region Gadget */
+/* #region News */
 .FunctionCommandTitle {
     color: unset;
 }
@@ -149,7 +150,7 @@ table.Gadget .GadgetFooterMenu > * {
     display: none;
 }
 .newsDiv {
-    background: var(--nmr-color-light-200);
+    background: var(--nmr-color-light-300);
     margin-top: 4px;
     padding: 6px 4px;
 }
@@ -164,3 +165,83 @@ table.Gadget .GadgetFooterMenu > * {
     font-family: Comfortaa !important;
 }
 /* #endregion */
+
+/* #region Function */
+.function {
+    background: var(--nmr-color-light-200);
+}
+.FunctionFooter {
+    border-bottom: unset;
+}
+.FunctionHeader,
+.FunctionHeaderLeftCorner,
+.FunctionHeaderRightCorner,
+.FunctionFooterLeftCorner,
+.FunctionFooterRightCorner,
+.FunctionLeftSide,
+.FunctionRightSide {
+    background-image: unset !important;
+}
+
+.FunctionHeader,
+.FunctionHeaderLeftCorner,
+.FunctionHeaderRightCorner {
+    background: var(--nmr-color-primary-100);
+}
+.FunctionHeader h1 {
+    color: var(--nmr-color-white-text);
+    font-family: unset;
+}
+/* #endregion */
+
+/* #region Footer */
+.footer_table {
+    margin-top: 8px;
+}
+.footer {
+    background: var(--nmr-color-light-200);
+}
+.footer .footer_left,
+.footer .footer_mid,
+.footer .footer_menu,
+.footer .footer_sda_logo,
+.footer .footer_right,
+.footer_menu a {
+    background-image: unset !important;
+}
+.footer_menu a {
+    color: var(--nmr-color-white-text);
+}
+/* #endregion */
+
+.modalBackground {
+    background-color: var(--nmr-color-light-200);
+}
+.modalfooterleftcorner,
+.modalfooterrightcorner_NoResize,
+.modalfooter {
+    background-image: unset;
+    display: none;
+}
+.modalheadercell,
+.modalheaderleftcorner,
+.modalheaderrightcorner,
+.modalbodyleft,
+.modalbodyright {
+    background-image: unset;
+}
+.modalheadercell {
+    background: var(--nmr-color-primary-100);
+}
+.modalpanel_header_caption {
+    color: var(--nmr-color-white-text)
+}
+.modalbody {
+    padding-top: unset;
+}
+.modalpanelcontent_noscrollbar_noheight {
+    background-color: var(--nmr-color-light-100);
+}
+.grid_searchbutton, .button {
+    background-image: unset;
+}
