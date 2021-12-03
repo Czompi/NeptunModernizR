@@ -53,6 +53,7 @@ table.Gadget .GadgetFooterMenu {
 
 html {
     background-color: var(--nmr-color-light-100);
+    color: var(--nmr-color-light-900);
     font-family: Comfortaa;
 }
 * {
