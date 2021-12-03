@@ -86,7 +86,7 @@ a:hover {
     font-weight: unset;
     font-family: unset;
 }
-.top_menu_wrapper  .menubar .menu-hover {
+.top_menu_wrapper  .menubar .menu-parent.menu-hover {
     color: var(--nmr-color-primary-100) !important;
 }
 .top_menu_wrapper .menu {
@@ -109,6 +109,13 @@ a:hover {
 .top_menu_wrapper .menu .menu-hover{
     background-image: unset !important;
     background: var(--nmr-color-primary-100);
+}
+#mb1 li.menu-parent {
+    color: unset;
+}
+#mb1 li.menu-parent.has-target:hover {
+    color: unset !important;
+    color: var(--nmr-color-primary-200) !important;
 }
 /* #endregion */
 
