@@ -3,6 +3,8 @@ table.Gadget > tbody > tr:first-of-type {
 }
 
 table.Gadget > tbody > tr:first-of-type > .HeaderLeftCorner,
-table.Gadget > tbody > tr:first-of-type > .HeaderRightCorner{
+table.Gadget > tbody > tr:first-of-type > .HeaderRightCorner,
+table.Gadget > tbody > tr:first-of-type > .GadgetHeaderPanelTitle,
+table.Gadget > tbody > tr:first-of-type > .GadgetHeaderPanelButtonLeftMenu {
     background-image: unset !important;
 }
