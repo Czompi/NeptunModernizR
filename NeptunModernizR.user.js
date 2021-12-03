@@ -11,7 +11,7 @@
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
 // @grant          none
-// @version        0.1
+// @version        0.2
 // @author         Czompi Software
 // @description    12/03/2021, 1:13:00 AM
 // @downloadURL    https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/NeptunModernizR.user.js
@@ -19,15 +19,20 @@
 
 const base_url = "https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/";
 
-var css = document.createElement("link");
-css.rel = "stylesheet";
-css.type = "text/css";
-css.href = base_url + "master.css";
+var mastercss = document.createElement("link");
+mastercss.rel = "stylesheet";
+mastercss.type = "text/css";
+mastercss.href = base_url + "master.css";
+var masterdarkcss = document.createElement("link");
+masterdarkcss.rel = "stylesheet";
+masterdarkcss.type = "text/css";
+masterdarkcss.href = base_url + "master-dark.css";
 
 function
 init() {
   var h = document.querySelector('head');
-  h.appendChild(css);
+  h.appendChild(mastercss);
+  h.appendChild(masterdarkcss);
 }
 
 init();
