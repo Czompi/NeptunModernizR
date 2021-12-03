@@ -19,6 +19,9 @@
     --nmr-color-nav-item-foreground: var(--nmr-color-light-200);
 }
 /* #region Remove neptun's default theme elements */
+table.Gadget {
+    width: 100% !important;
+}
 table.Gadget .HeaderLeftCorner,
 table.Gadget .HeaderRightCorner,
 table.Gadget .GadgetHeaderPanelTitle,
@@ -106,6 +109,15 @@ a:hover {
 /* #endregion */
 
 /* #region Gadget */
+.left_boxes {
+    padding-right: 8px;
+}
+.leftbuttons_td{
+    display: none;
+}
+.CloseLeftBox {
+    display: none;
+}
 table.Gadget > tbody > tr:first-of-type {
     background: var(--nmr-color-gadget-header-background);
 }
