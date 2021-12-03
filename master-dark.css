@@ -1,0 +1,13 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --nmr-color-light-100: hsl(330, 0%, 10%);
+        --nmr-color-light-200: hsl(330, 0%, 15%);
+        --nmr-color-light-300: hsl(330, 0%, 20%);
+        --nmr-color-light-400: hsl(330, 0%, 25%);
+        --nmr-color-light-500: hsl(330, 0%, 30%);
+        --nmr-color-light-600: hsl(330, 0%, 35%);
+        --nmr-color-light-700: hsl(330, 0%, 40%);
+        --nmr-color-light-800: hsl(330, 0%, 45%);
+        --nmr-color-light-900: hsl(330, 0%, 50%);
+    }
+}
