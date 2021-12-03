@@ -15,8 +15,8 @@
     --nmr-color-gadget-header-foreground: var(--nmr-color-white-text);
     --nmr-color-gadget-header-background: var(--nmr-color-primary-100);
     --nmr-color-gadget-border: var(--nmr-color-primary-100);
-    --nmr-color-gadget-background: var(--nmr-color-white-text);
-    --nmr-color-nav-item-foreground: var(--nmr-color-white-text);
+    --nmr-color-gadget-background: var(--nmr-color-light-200);
+    --nmr-color-nav-item-foreground: var(--nmr-color-light-200);
 }
 /* #region Remove neptun's default theme elements */
 table.Gadget .HeaderLeftCorner,
@@ -53,7 +53,7 @@ table.Gadget .GadgetFooterMenu {
 
 html {
     background-color: var(--nmr-color-light-100);
-    color: var(--nmr-color-light-900);
+    color: var(--nmr-color-white-text);
     font-family: Comfortaa;
 }
 * {
@@ -104,8 +104,8 @@ a:hover {
     background: var(--nmr-color-primary-100);
 }
 /* #endregion */
-/* #region Gadget */
 
+/* #region Gadget */
 table.Gadget > tbody > tr:first-of-type {
     background: var(--nmr-color-gadget-header-background);
 }
@@ -126,5 +126,29 @@ table.Gadget .GadgetMenuItem:hover, .mainfunction_item:hover {
 
 table.Gadget .GadgetFooterMenu > * {
     vertical-align: middle;
+}
+/* #endregion */
+
+/* #region Gadget */
+.FunctionCommandTitle {
+    color: unset;
+}
+.mainFunctionCommandBottom {
+    display: none;
+}
+.newsDiv {
+    background: var(--nmr-color-light-200);
+    margin-top: 4px;
+    padding: 6px 4px;
+}
+.newsDiv:not(:first-of-type) {
+    margin-top: 10px;
+}
+.newsDiv .newsTable {
+    border-top: unset;
+}
+.newsDiv .newsInnerDiv * {
+    color: unset !important;
+    font-family: Comfortaa !important;
 }
 /* #endregion */
