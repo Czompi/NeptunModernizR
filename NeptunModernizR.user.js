@@ -26,7 +26,6 @@ css.href = base_url + "master.css";
 
 function
 init() {
-  //add common css
   var h = document.querySelector('head');
   h.appendChild(css);
 }
