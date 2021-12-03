@@ -87,7 +87,7 @@ a:hover {
     font-family: unset;
 }
 .top_menu_wrapper  .menubar .menu-hover {
-    color: var(--nmr-color-primary-100);
+    color: var(--nmr-color-primary-100) !important;
 }
 .top_menu_wrapper .menu {
     left: unset !important;
