@@ -1,10 +1,26 @@
-table.Gadget > tbody > tr:first-of-type {
-    background: #ff0000;
+/* #region Remove neptun's default theme elements */
+table.Gadget .HeaderLeftCorner,
+table.Gadget .HeaderRightCorner,
+table.Gadget .GadgetHeaderPanelTitle,
+table.Gadget .GadgetHeaderPanelButtonLeftMenu,
+table.Gadget .GadgetFooterLeftCorner,
+table.Gadget .GadgetFooterRightCorner,
+table.Gadget .gadgetbodyleft,
+table.Gadget .gadgetbodyright {
+    background-image: unset !important;
 }
 
-table.Gadget > tbody > tr:first-of-type > .HeaderLeftCorner,
-table.Gadget > tbody > tr:first-of-type > .HeaderRightCorner,
-table.Gadget > tbody > tr:first-of-type > .GadgetHeaderPanelTitle,
-table.Gadget > tbody > tr:first-of-type > .GadgetHeaderPanelButtonLeftMenu {
-    background-image: unset !important;
+table.Gadget .GadgetFooter {
+    border-bottom: unset !important;
+}
+
+table.Gadget .gadgetbodyright {
+    padding-left: unset !important;
+}
+/* #endregion */
+
+
+table.Gadget > tbody > tr:first-of-type {
+    background: #ff6347;
+    border: #ff6347;
 }
