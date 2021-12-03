@@ -17,7 +17,7 @@
 // @downloadURL    https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/NeptunModernizR.user.js
 // ==/UserScript==
 
-const base_url = "https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/";
+const base_url = "https://cdn.jsdelivr.net/gh/Czompi/NeptunModernizR/";
 
 var mastercss = document.createElement("link");
 mastercss.rel = "stylesheet";
