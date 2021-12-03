@@ -1,0 +1,8 @@
+table.Gadget > tbody > tr:first-of-type {
+    background: #ff0000;
+}
+
+table.Gadget > tbody > tr:first-of-type > .HeaderLeftCorner,
+table.Gadget > tbody > tr:first-of-type > .HeaderRightCorner{
+    background-image: unset !important;
+}
