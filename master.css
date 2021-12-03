@@ -1,3 +1,12 @@
+:root {
+    --color-primary-100: #FF6347;
+    --color-primary-200: #CC4F38;
+    --color-white-text: #FEFEFE;
+    --color-gadget-header-foreground: var(--color-white-text);
+    --color-gadget-header-background: var(--color-primary-100);
+    --color-gadget-border: var(--color-primary-100);
+    --color-gadget-background: var(--color-white-text);
+}
 /* #region Remove neptun's default theme elements */
 table.Gadget .HeaderLeftCorner,
 table.Gadget .HeaderRightCorner,
@@ -17,10 +26,39 @@ table.Gadget .GadgetFooter {
 table.Gadget .gadgetbodyright {
     padding-left: unset !important;
 }
+
+table.Gadget .GadgetMenuItem, .mainfunction_item
+table.Gadget .GadgetMenuItem:hover, .mainfunction_item:hover {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border-radius: unset;
+    text-decoration: none;
+}
+
+table.Gadget .GadgetFooterMenu {
+    color: unset;
+}
 /* #endregion */
 
 
 table.Gadget > tbody > tr:first-of-type {
-    background: #ff6347;
-    border: #ff6347;
+    background: var(--color-gadget-header-background);
+}
+table.Gadget {
+    border: 1px solid var(--color-gadget-border);
+    background: var(--color-gadget-background);
+}
+table.Gadget .GadgetHeaderPanelTitle {
+    color: var(--color-gadget-header-foreground);
+}
+table.Gadget .GadgetMenuItem, .mainfunction_item {
+    background: var(--color-primary-100);
+}
+
+table.Gadget .GadgetMenuItem:hover, .mainfunction_item:hover {
+    background: var(--color-primary-200);
+}
+
+table.Gadget .GadgetFooterMenu > * {
+    vertical-align: middle;
 }
