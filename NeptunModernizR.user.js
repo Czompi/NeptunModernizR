@@ -11,7 +11,7 @@
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
 // @grant          none
-// @version        0.2
+// @version        0.3
 // @author         Czompi Software
 // @description    12/03/2021, 1:13:00 AM
 // @downloadURL    https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/NeptunModernizR.user.js
