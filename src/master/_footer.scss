@@ -1,0 +1,18 @@
+
+.footer_table {
+    margin-top: 8px;
+}
+.footer {
+    background: var(--nmr-color-gray-200);
+}
+.footer .footer_left,
+.footer .footer_mid,
+.footer .footer_menu,
+.footer .footer_sda_logo,
+.footer .footer_right,
+.footer_menu a {
+    background-image: unset !important;
+}
+.footer_menu a {
+    color: var(--nmr-color-text-white);
+}

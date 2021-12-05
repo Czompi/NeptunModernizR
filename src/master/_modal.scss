@@ -1,0 +1,29 @@
+
+.modalBackground {
+    background-color: var(--nmr-color-gray-200);
+}
+.modalfooterleftcorner,
+.modalfooterrightcorner_NoResize,
+.modalfooter {
+    background-image: unset;
+    display: none;
+}
+.modalheadercell,
+.modalheaderleftcorner,
+.modalheaderrightcorner,
+.modalbodyleft,
+.modalbodyright {
+    background-image: unset;
+}
+.modalheadercell {
+    background: var(--nmr-color-primary-100);
+}
+.modalpanel_header_caption {
+    color: var(--nmr-color-text-white)
+}
+.modalbody {
+    padding-top: unset;
+}
+.modalpanelcontent_noscrollbar_noheight {
+    background-color: var(--nmr-color-gray-100);
+}

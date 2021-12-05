@@ -1,0 +1,378 @@
+@import 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap';
+/* #region Root */
+:root {
+  --nmr-color-gray-100: hsl(330, 0%, 90%);
+  --nmr-color-gray-200: hsl(330, 0%, 80%);
+  --nmr-color-gray-300: hsl(330, 0%, 70%);
+  --nmr-color-gray-400: hsl(330, 0%, 60%);
+  --nmr-color-gray-500: hsl(330, 0%, 50%);
+  --nmr-color-gray-600: hsl(330, 0%, 40%);
+  --nmr-color-gray-700: hsl(330, 0%, 30%);
+  --nmr-color-gray-800: hsl(330, 0%, 20%);
+  --nmr-color-gray-900: hsl(330, 0%, 10%);
+  --nmr-color-primary-100: #FF6347;
+  --nmr-color-primary-200: #CC4F38;
+  --nmr-color-text-white: #FEFEFE;
+  --nmr-color-text: #141414;
+  --nmr-color-gadget-header-foreground: var(--nmr-color-text-white);
+  --nmr-color-gadget-header-background: var(--nmr-color-primary-100);
+  --nmr-color-gadget-border: var(--nmr-color-primary-100);
+  --nmr-color-gadget-background: var(--nmr-color-gray-200);
+  --nmr-color-nav-item-foreground: var(--nmr-color-text-white);
+  --nmr-font-primary: Comfortaa;
+}
+
+/* #endregion */
+/* #region Base */
+html {
+  background-color: var(--nmr-color-gray-100);
+  color: var(--nmr-color-text-white);
+  font-family: var(--nmr-font-primary);
+}
+
+* {
+  font-family: var(--nmr-font-primary);
+}
+
+a,
+a:hover {
+  color: var(--nmr-color-primary-100);
+  font-weight: normal;
+}
+
+.button {
+  background-image: unset;
+}
+
+.no_style {
+  height: unset !important;
+  width: unset !important;
+}
+
+.right_side_space {
+  display: none;
+}
+
+/* #endregion */
+/* #region Gadget */
+table.Gadget {
+  width: 100% !important;
+}
+
+table.Gadget .HeaderLeftCorner,
+table.Gadget .HeaderRightCorner,
+table.Gadget .GadgetHeaderPanelTitle,
+table.Gadget .GadgetHeaderPanelButtonLeftMenu,
+table.Gadget .GadgetFooterLeftCorner,
+table.Gadget .GadgetFooterRightCorner,
+table.Gadget .gadgetbodyleft,
+table.Gadget .gadgetbodyright {
+  background-image: unset !important;
+}
+
+table.Gadget .GadgetFooter {
+  border-bottom: unset !important;
+}
+
+table.Gadget .gadgetbodyright {
+  padding-left: unset !important;
+}
+
+table.Gadget .GadgetMenuItem, .mainfunction_item,
+table.Gadget .GadgetMenuItem:hover, .mainfunction_item:hover {
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  border-radius: unset;
+  text-decoration: none;
+}
+
+table.Gadget .GadgetFooterMenu {
+  color: unset;
+}
+
+/* #region Customizations */
+.left_boxes {
+  padding-right: 8px;
+}
+
+.leftbuttons_td {
+  display: none;
+}
+
+.CloseLeftBox {
+  display: none;
+}
+
+table.Gadget > tbody > tr:first-of-type {
+  background: var(--nmr-color-gadget-header-background);
+}
+
+table.Gadget {
+  border: 1px solid var(--nmr-color-gadget-border);
+  background: var(--nmr-color-gadget-background);
+}
+
+table.Gadget .GadgetHeaderPanelTitle {
+  color: var(--nmr-color-gadget-header-foreground);
+}
+
+table.Gadget .GadgetMenuItem, .mainfunction_item {
+  background: var(--nmr-color-primary-100);
+}
+
+table.Gadget .GadgetMenuItem:hover, .mainfunction_item:hover {
+  background: var(--nmr-color-primary-200);
+}
+
+table.Gadget .GadgetFooterMenu > * {
+  vertical-align: middle;
+}
+
+/* #endregion */
+/* #endregion */
+/* #region Navbar */
+.top_training,
+.top_logout {
+  color: var(--nmr-color-text-white);
+}
+
+.top_menu_wrapper {
+  background: var(--nmr-color-gray-200);
+}
+
+.top_menu_wrapper .top_menu_left,
+.top_menu_wrapper .top_menu_mid,
+.top_menu_wrapper .top_menu_right,
+.top_menu_wrapper .menubar .menu-parent {
+  background-image: unset !important;
+}
+
+.top_menu_wrapper .menubar .menu-parent {
+  color: var(--nmr-color-nav-item-foreground);
+  font-weight: unset;
+  font-family: unset;
+}
+
+.top_menu_wrapper .menubar .menu-parent.menu-hover {
+  color: var(--nmr-color-primary-100) !important;
+}
+
+.top_menu_wrapper .menu {
+  left: unset !important;
+}
+
+.top_menu_wrapper .menu .menuitemfirst,
+.top_menu_wrapper .menu .menuitemlast {
+  background-image: unset !important;
+  padding-bottom: unset !important;
+  padding-top: unset !important;
+}
+
+.top_menu_wrapper .menu .menu-item {
+  border-left-color: unset;
+  border-left-width: unset;
+  border-left-style: unset;
+  border-right-color: unset;
+  border-right-width: unset;
+  border-right-style: unset;
+}
+
+.top_menu_wrapper .menu .menu-hover {
+  background-image: unset !important;
+  background: var(--nmr-color-primary-100);
+}
+
+#mb1 > li.menu-parent {
+  -webkit-text-fill-color: white;
+}
+
+#mb1 .menu {
+  -webkit-text-fill-color: unset;
+  -webkit-text-fill-color: var(--nmr-color-text);
+}
+
+#mb1 > li.menu-parent.has-target {
+  -webkit-text-fill-color: unset;
+  -webkit-text-fill-color: var(--nmr-color-primary-200);
+}
+
+#mb1 li.menu-parent.has-target:hover {
+  -webkit-text-fill-color: var(--nmr-color-primary-200);
+  color: var(--nmr-color-primary-200) !important;
+}
+
+.top_menu_wrapper .menu {
+  background: var(--nmr-color-gray-300);
+}
+
+ul.menu li.menu-item {
+  font-family: var(--nmr-font-primary);
+  color: var(--nmr-color-text);
+  padding-block: 4px;
+  font-weight: normal;
+}
+
+/* #endregion */
+/* #region News */
+.FunctionCommandTitle {
+  color: unset;
+}
+
+.mainFunctionCommandBottom {
+  display: none;
+}
+
+.newsDiv {
+  background: var(--nmr-color-gray-300);
+  margin-top: 4px;
+  padding: 6px 4px;
+}
+
+.newsDiv:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+.newsDiv .newsTable {
+  border-top: unset;
+}
+
+.newsDiv .newsInnerDiv * {
+  color: unset !important;
+  font-family: var(--nmr-font-primary) !important;
+}
+
+/* #endregion */
+/* #region Function */
+.function {
+  background: var(--nmr-color-gray-200);
+  display: block;
+  margin-top: 16px;
+}
+
+.FunctionFooter {
+  border-bottom: unset;
+}
+
+.FunctionHeader,
+.FunctionHeaderLeftCorner,
+.FunctionHeaderRightCorner,
+.FunctionFooterLeftCorner,
+.FunctionFooterRightCorner,
+.FunctionLeftSide,
+.FunctionRightSide {
+  background-image: unset !important;
+}
+
+.FunctionHeader,
+.FunctionHeaderLeftCorner,
+.FunctionHeaderRightCorner {
+  background: var(--nmr-color-primary-100);
+}
+
+.FunctionHeader h1 {
+  color: var(--nmr-color-text-white);
+  font-family: unset;
+}
+
+/* #endregion */
+/* #region Footer */
+.footer_table {
+  margin-top: 8px;
+}
+
+.footer {
+  background: var(--nmr-color-gray-200);
+}
+
+.footer .footer_left,
+.footer .footer_mid,
+.footer .footer_menu,
+.footer .footer_sda_logo,
+.footer .footer_right,
+.footer_menu a {
+  background-image: unset !important;
+}
+
+.footer_menu a {
+  color: var(--nmr-color-text-white);
+}
+
+/* #endregion */
+/* #region Modal */
+.modalBackground {
+  background-color: var(--nmr-color-gray-200);
+}
+
+.modalfooterleftcorner,
+.modalfooterrightcorner_NoResize,
+.modalfooter {
+  background-image: unset;
+  display: none;
+}
+
+.modalheadercell,
+.modalheaderleftcorner,
+.modalheaderrightcorner,
+.modalbodyleft,
+.modalbodyright {
+  background-image: unset;
+}
+
+.modalheadercell {
+  background: var(--nmr-color-primary-100);
+}
+
+.modalpanel_header_caption {
+  color: var(--nmr-color-text-white);
+}
+
+.modalbody {
+  padding-top: unset;
+}
+
+.modalpanelcontent_noscrollbar_noheight {
+  background-color: var(--nmr-color-gray-100);
+}
+
+/* #endregion */
+/* #region Search */
+.grid_searchbutton {
+  background-image: unset;
+}
+
+.searchpanel {
+  background: var(--nmr-color-gray-300);
+}
+.searchpanel .sp_header_left_top, .searchpanel .sp_header_midle_top, .searchpanel .sp_header_right_top, .searchpanel .sp_header_left, .searchpanel .sp_header_midle, .searchpanel .sp_header_right, .searchpanel .sp_footerleftcorner, .searchpanel .sp_footerbody, .searchpanel .sp_footerrightcorner, .searchpanel .sp_headerseparator {
+  background-image: unset;
+}
+.searchpanel .sp_headerseparator {
+  border-right: 1px solid var(--nmr-color-text);
+}
+.searchpanel .sp_header_left, .searchpanel .sp_header_midle, .searchpanel .sp_header_right {
+  background: var(--nmr-color-primary-100);
+}
+.searchpanel .sp_header_left_top, .searchpanel .sp_header_midle_top, .searchpanel .sp_header_right_top {
+  display: none;
+}
+.searchpanel .sp_footerbody {
+  background-color: unset;
+  border-bottom: unset;
+}
+.searchpanel .sp_afterheaderleftside, .searchpanel .sp_afterheader, .searchpanel .sp_afterheaderrightside {
+  background-image: unset;
+  background-color: unset;
+}
+.searchpanel .sp_body {
+  background-color: unset;
+}
+.searchpanel .sp_header_midle {
+  padding-block: 4px;
+}
+.searchpanel .sp_headerimages {
+  padding: 0px;
+  padding-top: 3px;
+}
+/* #endregion */
+
+/*# sourceMappingURL=master.css.map */

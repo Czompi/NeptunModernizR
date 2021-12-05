@@ -1,0 +1,22 @@
+
+.FunctionCommandTitle {
+    color: unset;
+}
+.mainFunctionCommandBottom {
+    display: none;
+}
+.newsDiv {
+    background: var(--nmr-color-gray-300);
+    margin-top: 4px;
+    padding: 6px 4px;
+}
+.newsDiv:not(:first-of-type) {
+    margin-top: 10px;
+}
+.newsDiv .newsTable {
+    border-top: unset;
+}
+.newsDiv .newsInnerDiv * {
+    color: unset !important;
+    font-family: var(--nmr-font-primary) !important;
+}

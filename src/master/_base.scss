@@ -1,0 +1,26 @@
+
+html {
+    background-color: var(--nmr-color-gray-100);
+    color: var(--nmr-color-text-white);
+    font-family: var(--nmr-font-primary);
+}
+* {
+    font-family: var(--nmr-font-primary);
+}
+a,
+a:hover {
+    color: var(--nmr-color-primary-100);
+    font-weight: normal;
+}
+
+.button {
+    background-image: unset;
+}
+
+.no_style {
+    height: unset !important;
+    width: unset !important;
+}
+.right_side_space {
+    display: none;
+}

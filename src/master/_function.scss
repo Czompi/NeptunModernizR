@@ -1,0 +1,28 @@
+
+.function {
+    background: var(--nmr-color-gray-200);
+    display: block;
+    margin-top: 16px;
+}
+.FunctionFooter {
+    border-bottom: unset;
+}
+.FunctionHeader,
+.FunctionHeaderLeftCorner,
+.FunctionHeaderRightCorner,
+.FunctionFooterLeftCorner,
+.FunctionFooterRightCorner,
+.FunctionLeftSide,
+.FunctionRightSide {
+    background-image: unset !important;
+}
+
+.FunctionHeader,
+.FunctionHeaderLeftCorner,
+.FunctionHeaderRightCorner {
+    background: var(--nmr-color-primary-100);
+}
+.FunctionHeader h1 {
+    color: var(--nmr-color-text-white);
+    font-family: unset;
+}

@@ -1,0 +1,15 @@
+{
+    "name": "neptunmodernizr",
+    "version": "0.11",
+    "description": "",
+    "scripts": {
+      "dev": "sass --watch src/:dist/"
+    },
+    "keywords": [],
+    "author": "Czompi Software",
+    "license": "CC BY-NC-ND 4.0",
+    "devDependencies": {
+      "sass": "^1.37.5",
+      "scss": "^0.2.4"
+    }
+}

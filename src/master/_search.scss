@@ -1,0 +1,55 @@
+
+.grid_searchbutton {
+    background-image: unset;
+}
+.searchpanel {
+    background: var(--nmr-color-gray-300);
+    & .sp_header_left_top,
+    & .sp_header_midle_top, // rly?! a typo in a production software?!
+    & .sp_header_right_top,
+    & .sp_header_left,
+    & .sp_header_midle,     // rly?! a typo in a production software?!
+    & .sp_header_right,
+    & .sp_footerleftcorner,
+    & .sp_footerbody,
+    & .sp_footerrightcorner,
+    & .sp_headerseparator {
+        background-image: unset;
+    }
+    & .sp_headerseparator {
+        border-right: 1px solid var(--nmr-color-text);
+    }
+    & .sp_header_left,
+    & .sp_header_midle,     // rly?! a typo in a production software?!
+    & .sp_header_right {
+        background: var(--nmr-color-primary-100);
+    }
+    & .sp_header_left_top,
+    & .sp_header_midle_top, // rly?! a typo in a production software?!
+    & .sp_header_right_top {
+        display: none;
+    }
+    & .sp_footerbody {
+        background-color: unset;
+        border-bottom: unset;
+    }
+    & .sp_afterheaderleftside,
+    & .sp_afterheader,
+    & .sp_afterheaderrightside {
+        background-image: unset;
+        background-color: unset;
+    }
+    & .sp_body {
+        background-color: unset;
+    }
+    
+    & .sp_header_midle {
+        padding-block: 4px;
+    }
+    & .sp_headerimages {
+        padding: 0px;
+        padding-top: 3px;
+    }
+    & .searchpanel_body {
+    }
+}

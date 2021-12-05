@@ -1,0 +1,67 @@
+
+.top_training,
+.top_logout {
+    color: var(--nmr-color-text-white);
+}
+.top_menu_wrapper {
+    background: var(--nmr-color-gray-200);
+}
+.top_menu_wrapper .top_menu_left,
+.top_menu_wrapper .top_menu_mid,
+.top_menu_wrapper .top_menu_right,
+.top_menu_wrapper .menubar .menu-parent {
+    background-image: unset !important;
+}
+.top_menu_wrapper .menubar .menu-parent {
+    color: var(--nmr-color-nav-item-foreground);
+    font-weight: unset;
+    font-family: unset;
+}
+.top_menu_wrapper  .menubar .menu-parent.menu-hover {
+    color: var(--nmr-color-primary-100) !important;
+}
+.top_menu_wrapper .menu {
+    left: unset !important;
+}
+.top_menu_wrapper .menu .menuitemfirst,
+.top_menu_wrapper .menu .menuitemlast {
+    background-image: unset !important;
+    padding-bottom: unset !important;
+    padding-top: unset !important;
+}
+.top_menu_wrapper .menu .menu-item {
+    border-left-color: unset;
+    border-left-width: unset;
+    border-left-style: unset;
+    border-right-color: unset;
+    border-right-width: unset;
+    border-right-style: unset;
+}
+.top_menu_wrapper .menu .menu-hover{
+    background-image: unset !important;
+    background: var(--nmr-color-primary-100);
+}
+#mb1 > li.menu-parent {
+    -webkit-text-fill-color: white;
+}
+#mb1 .menu {
+    -webkit-text-fill-color: unset;
+    -webkit-text-fill-color: var(--nmr-color-text);
+}
+#mb1 > li.menu-parent.has-target {
+    -webkit-text-fill-color: unset;
+    -webkit-text-fill-color: var(--nmr-color-primary-200);
+}
+#mb1 li.menu-parent.has-target:hover {
+    -webkit-text-fill-color: var(--nmr-color-primary-200);
+    color: var(--nmr-color-primary-200) !important;
+}
+.top_menu_wrapper .menu  {
+    background: var(--nmr-color-gray-300);
+}
+ul.menu li.menu-item {
+    font-family: var(--nmr-font-primary);
+    color: var(--nmr-color-text);
+    padding-block: 4px;
+    font-weight: normal;
+}
