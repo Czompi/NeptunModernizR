@@ -9,5 +9,6 @@
         --nmr-color-light-700: hsl(330, 0%, 40%);
         --nmr-color-light-800: hsl(330, 0%, 45%);
         --nmr-color-light-900: hsl(330, 0%, 50%);
+        --nmr-color-text: #FEFEFE;
     }
 }

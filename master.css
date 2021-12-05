@@ -11,12 +11,13 @@
     --nmr-color-light-900: hsl(330, 0%, 10%);
     --nmr-color-primary-100: #FF6347;
     --nmr-color-primary-200: #CC4F38;
-    --nmr-color-white-text: #FEFEFE;
-    --nmr-color-gadget-header-foreground: var(--nmr-color-white-text);
+    --nmr-color-text-white: #FEFEFE;
+    --nmr-color-text: #141414;
+    --nmr-color-gadget-header-foreground: var(--nmr-color-text-white);
     --nmr-color-gadget-header-background: var(--nmr-color-primary-100);
     --nmr-color-gadget-border: var(--nmr-color-primary-100);
     --nmr-color-gadget-background: var(--nmr-color-light-200);
-    --nmr-color-nav-item-foreground: var(--nmr-color-white-text);
+    --nmr-color-nav-item-foreground: var(--nmr-color-text-white);
     --nmr-font-primary: Comfortaa;
 }
 /* #region Remove neptun's default theme elements */
@@ -57,7 +58,7 @@ table.Gadget .GadgetFooterMenu {
 
 html {
     background-color: var(--nmr-color-light-100);
-    color: var(--nmr-color-white-text);
+    color: var(--nmr-color-text-white);
     font-family: var(--nmr-font-primary);
 }
 * {
@@ -71,7 +72,7 @@ a:hover {
 /* #region Header */
 .top_training,
 .top_logout {
-    color: var(--nmr-color-white-text);
+    color: var(--nmr-color-text-white);
 }
 .top_menu_wrapper {
     background: var(--nmr-color-light-200);
@@ -114,9 +115,13 @@ a:hover {
 #mb1 > li.menu-parent {
     -webkit-text-fill-color: white;
 }
-#mb1 .menu,
+#mb1 .menu {
+    -webkit-text-fill-color: unset;
+    -webkit-text-fill-color: var(--nmr-color-text);
+}
 #mb1 > li.menu-parent.has-target {
     -webkit-text-fill-color: unset;
+    -webkit-text-fill-color: var(--nmr-color-primary-200);
 }
 #mb1 li.menu-parent.has-target:hover {
     -webkit-text-fill-color: var(--nmr-color-primary-200);
@@ -127,6 +132,7 @@ a:hover {
 }
 ul.menu li.menu-item {
     font-family: var(--nmr-font-primary);
+    background: var(--nmr-color-text);
     font-weight: normal;
 }
 /* #endregion */
@@ -211,7 +217,7 @@ table.Gadget .GadgetFooterMenu > * {
     background: var(--nmr-color-primary-100);
 }
 .FunctionHeader h1 {
-    color: var(--nmr-color-white-text);
+    color: var(--nmr-color-text-white);
     font-family: unset;
 }
 /* #endregion */
@@ -232,7 +238,7 @@ table.Gadget .GadgetFooterMenu > * {
     background-image: unset !important;
 }
 .footer_menu a {
-    color: var(--nmr-color-white-text);
+    color: var(--nmr-color-text-white);
 }
 /* #endregion */
 
@@ -256,7 +262,7 @@ table.Gadget .GadgetFooterMenu > * {
     background: var(--nmr-color-primary-100);
 }
 .modalpanel_header_caption {
-    color: var(--nmr-color-white-text)
+    color: var(--nmr-color-text-white)
 }
 .modalbody {
     padding-top: unset;
