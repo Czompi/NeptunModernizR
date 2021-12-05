@@ -11,13 +11,13 @@
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
 // @grant          none
-// @version        0.9
+// @version        0.10
 // @author         Czompi Software
 // @description    12/03/2021, 1:13:00 AM
 // @downloadURL    https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/NeptunModernizR.user.js
 // ==/UserScript==
 
-const base_url = "https://cdn.jsdelivr.net/gh/Czompi/NeptunModernizR@0.9/";
+const base_url = "https://cdn.jsdelivr.net/gh/Czompi/NeptunModernizR@0.10/";
 
 var mastercss = document.createElement("link");
 mastercss.rel = "stylesheet";

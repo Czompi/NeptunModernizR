@@ -132,7 +132,8 @@ a:hover {
 }
 ul.menu li.menu-item {
     font-family: var(--nmr-font-primary);
-    background: var(--nmr-color-text);
+    color: var(--nmr-color-text);
+    padding-block: 4px;
     font-weight: normal;
 }
 /* #endregion */
