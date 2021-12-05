@@ -17,6 +17,7 @@
     --nmr-color-gadget-border: var(--nmr-color-primary-100);
     --nmr-color-gadget-background: var(--nmr-color-light-200);
     --nmr-color-nav-item-foreground: var(--nmr-color-white-text);
+    --nmr-font-primary: Comfortaa;
 }
 /* #region Remove neptun's default theme elements */
 table.Gadget {
@@ -57,10 +58,10 @@ table.Gadget .GadgetFooterMenu {
 html {
     background-color: var(--nmr-color-light-100);
     color: var(--nmr-color-white-text);
-    font-family: Comfortaa;
+    font-family: var(--nmr-font-primary);
 }
 * {
-    font-family: Comfortaa;
+    font-family: var(--nmr-font-primary);
 }
 a,
 a:hover {
@@ -110,12 +111,23 @@ a:hover {
     background-image: unset !important;
     background: var(--nmr-color-primary-100);
 }
-#mb1 li.menu-parent {
-    color: unset;
+#mb1 > li.menu-parent {
+    -webkit-text-fill-color: white;
+}
+#mb1 .menu,
+#mb1 > li.menu-parent.has-target {
+    -webkit-text-fill-color: unset;
 }
 #mb1 li.menu-parent.has-target:hover {
-    color: unset !important;
+    -webkit-text-fill-color: var(--nmr-color-primary-200);
     color: var(--nmr-color-primary-200) !important;
+}
+.top_menu_wrapper .menu  {
+    background: var(--nmr-color-light-300);
+}
+ul.menu li.menu-item {
+    font-family: var(--nmr-font-primary);
+    font-weight: normal;
 }
 /* #endregion */
 
@@ -172,7 +184,7 @@ table.Gadget .GadgetFooterMenu > * {
 }
 .newsDiv .newsInnerDiv * {
     color: unset !important;
-    font-family: Comfortaa !important;
+    font-family: var(--nmr-font-primary) !important;
 }
 /* #endregion */
 
