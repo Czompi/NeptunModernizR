@@ -1,0 +1,54 @@
+.grid_pagerrow {
+    & .grid_pagerrow_left,
+    & .grid_topfunctionpanel,
+    & .grid_pagerpanel,
+    & .grid_pagerrow_right {
+        background-image: unset;
+        border: unset;
+        background: unset;
+        color: var(--nmr-color-text);
+        background: var(--nmr-color-gray-300);
+    }
+}
+.table_body {
+    background-image: unset;
+    border: unset;
+    background: unset;
+    color: var(--nmr-color-text);
+    background: var(--nmr-color-gray-400);
+    & .header,
+    & .header_plus {
+        background: unset;
+        border-bottom: unset;
+        color: var(--nmr-color-text);
+        background: var(--nmr-color-gray-300);
+    }
+    & .header_sorteddown, & .header_sortedup {
+        background: unset;
+        border-bottom: unset;
+        color: var(--nmr-color-text);
+        background: var(--nmr-color-gray-200);
+    }
+
+    & .scrollablebody tr {
+        background: unset;
+        color: var(--nmr-color-text);
+        border-bottom-color:rgba(0, 0, 0, 0.25);
+    }
+    & .scrollablebody tr td span.link {
+        color: var(--nmr-color-primary-100);
+    }
+}
+.tablebottom {
+    color: var(--nmr-color-text);
+    background: var(--nmr-color-gray-300);
+    & .grid_footerleftcorner,
+    & .grid_RowCount,
+    & .grid_bottomfunctionpanel,
+    & .grid_footerrightcorner {
+        background-image: unset;
+        border: unset;
+        background: unset;
+        color: var(--nmr-color-text);
+    }
+}

@@ -68,8 +68,8 @@ input[type=radio] {
 input[type=checkbox] {
     border-radius: 0.25rem;
     &:indeterminate {
-        background-color: #0d6efd;
-        border-color: #0d6efd;
+        background-color: var(--nmr-color-primary-100);
+        border-color: var(--nmr-color-primary-100);
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
     }
 }
@@ -81,4 +81,48 @@ input:checked[type=checkbox] {
 }
 input:checked[type=radio] {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+.captiontable {
+    .caption {
+        color: unset;
+        font-family: unset;
+    }
+}
+.tooltipDetails {
+    background-color: var(--nmr-color-gray-300);
+    color: var(--nmr-color-text);
+    padding: .3rem .4rem;
+}
+.contextdiv {
+    background-color: var(--nmr-color-gray-300);
+    & .grid_contextheader,
+    & .grid_contextfooter {
+        background: unset;
+        background-color: unset;
+        background-image: unset;
+    }
+    & .contextitem_disabled {
+        background: unset;
+        background-color: unset;
+        background-image: unset;
+        color: var(--nmr-color-gray-200) !important;
+    }
+    & .contextitem {
+        background: unset;
+        background-color: unset;
+        background-image: unset;
+        color: var(--nmr-color-text);
+    }
+    & .contextitem:hover,
+    & .almenu_item:hover,
+    & .contextitemschedule:hover,
+    & .contextitem:focus,
+    & .almenu_item:focus,
+    & .contextitemschedule:focus {
+        background: unset;
+        background-color: unset;
+        background-image: unset;
+        color: var(--nmr-color-text-white);
+        background-color: var(--nmr-color-primary-100);
+    }
 }

@@ -106,8 +106,8 @@ input[type=checkbox] {
   border-radius: 0.25rem;
 }
 input[type=checkbox]:indeterminate {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: var(--nmr-color-primary-100);
+  border-color: var(--nmr-color-primary-100);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 
@@ -121,6 +121,45 @@ input:checked[type=checkbox] {
 
 input:checked[type=radio] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.captiontable .caption {
+  color: unset;
+  font-family: unset;
+}
+
+.tooltipDetails {
+  background-color: var(--nmr-color-gray-300);
+  color: var(--nmr-color-text);
+  padding: 0.3rem 0.4rem;
+}
+
+.contextdiv {
+  background-color: var(--nmr-color-gray-300);
+}
+.contextdiv .grid_contextheader, .contextdiv .grid_contextfooter {
+  background: unset;
+  background-color: unset;
+  background-image: unset;
+}
+.contextdiv .contextitem_disabled {
+  background: unset;
+  background-color: unset;
+  background-image: unset;
+  color: var(--nmr-color-gray-200) !important;
+}
+.contextdiv .contextitem {
+  background: unset;
+  background-color: unset;
+  background-image: unset;
+  color: var(--nmr-color-text);
+}
+.contextdiv .contextitem:hover, .contextdiv .almenu_item:hover, .contextdiv .contextitemschedule:hover, .contextdiv .contextitem:focus, .contextdiv .almenu_item:focus, .contextdiv .contextitemschedule:focus {
+  background: unset;
+  background-color: unset;
+  background-image: unset;
+  color: var(--nmr-color-text-white);
+  background-color: var(--nmr-color-primary-100);
 }
 
 /* #endregion */
@@ -199,6 +238,10 @@ table.Gadget .GadgetFooterMenu > * {
 }
 
 /* #endregion */
+.TitleLeft {
+  color: var(--nmr-color-primary-100);
+}
+
 /* #endregion */
 /* #region Navbar */
 .top_training,
@@ -342,6 +385,55 @@ ul.menu li.menu-item {
 .FunctionHeader h1 {
   color: var(--nmr-color-text-white);
   font-family: unset;
+}
+
+/* #endregion */
+/* #region Table */
+.grid_pagerrow .grid_pagerrow_left, .grid_pagerrow .grid_topfunctionpanel, .grid_pagerrow .grid_pagerpanel, .grid_pagerrow .grid_pagerrow_right {
+  background-image: unset;
+  border: unset;
+  background: unset;
+  color: var(--nmr-color-text);
+  background: var(--nmr-color-gray-300);
+}
+
+.table_body {
+  background-image: unset;
+  border: unset;
+  background: unset;
+  color: var(--nmr-color-text);
+  background: var(--nmr-color-gray-400);
+}
+.table_body .header, .table_body .header_plus {
+  background: unset;
+  border-bottom: unset;
+  color: var(--nmr-color-text);
+  background: var(--nmr-color-gray-300);
+}
+.table_body .header_sorteddown, .table_body .header_sortedup {
+  background: unset;
+  border-bottom: unset;
+  color: var(--nmr-color-text);
+  background: var(--nmr-color-gray-200);
+}
+.table_body .scrollablebody tr {
+  background: unset;
+  color: var(--nmr-color-text);
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+.table_body .scrollablebody tr td span.link {
+  color: var(--nmr-color-primary-100);
+}
+
+.tablebottom {
+  color: var(--nmr-color-text);
+  background: var(--nmr-color-gray-300);
+}
+.tablebottom .grid_footerleftcorner, .tablebottom .grid_RowCount, .tablebottom .grid_bottomfunctionpanel, .tablebottom .grid_footerrightcorner {
+  background-image: unset;
+  border: unset;
+  background: unset;
+  color: var(--nmr-color-text);
 }
 
 /* #endregion */
