@@ -63,4 +63,21 @@
         font-family: unset;
         font-weight: normal;
     }
+
+    & .sp_headertitle,
+    & .sp_headerconditions {
+        color: unset;
+        font-family: unset;
+        font-weight: normal;
+    }
+    & .grid_searchbutton, & .button {
+        font-weight: unset;
+        font-family: unset;
+        border: unset;
+        background: var(--nmr-color-primary-100);
+    }
+    & .grid_searchbutton:hover, & .button:hover {
+        background: var(--nmr-color-primary-200);
+        text-decoration: unset;
+    }
 }

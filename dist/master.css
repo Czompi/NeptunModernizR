@@ -547,6 +547,21 @@ ul.menu li.menu-item {
   font-family: unset;
   font-weight: normal;
 }
+.searchpanel .sp_headertitle, .searchpanel .sp_headerconditions {
+  color: unset;
+  font-family: unset;
+  font-weight: normal;
+}
+.searchpanel .grid_searchbutton, .searchpanel .button {
+  font-weight: unset;
+  font-family: unset;
+  border: unset;
+  background: var(--nmr-color-primary-100);
+}
+.searchpanel .grid_searchbutton:hover, .searchpanel .button:hover {
+  background: var(--nmr-color-primary-200);
+  text-decoration: unset;
+}
 
 /* #endregion */
 
