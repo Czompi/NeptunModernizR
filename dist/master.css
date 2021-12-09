@@ -361,7 +361,6 @@ ul.menu li.menu-item {
 /* #region Function */
 .function {
   background: var(--nmr-color-gray-200);
-  display: block;
   margin-top: 16px;
 }
 
