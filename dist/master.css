@@ -165,6 +165,18 @@ input:checked[type=radio] {
   background-color: var(--nmr-color-primary-100);
 }
 
+.tableRowName {
+  color: unset;
+  font-family: unset;
+  font-weight: normal;
+}
+
+.tableRowData {
+  color: unset;
+  font-family: unset;
+  font-weight: normal;
+}
+
 /* #endregion */
 /* #region Gadget */
 table.Gadget {
@@ -540,16 +552,6 @@ ul.menu li.menu-item {
 .searchpanel .sp_headerimages {
   padding: 0px;
   padding-top: 3px;
-}
-.searchpanel .tableRowName {
-  color: unset;
-  font-family: unset;
-  font-weight: normal;
-}
-.searchpanel .tableRowData {
-  color: unset;
-  font-family: unset;
-  font-weight: normal;
 }
 .searchpanel .sp_headertitle, .searchpanel .sp_headerconditions {
   color: var(--nmr-color-text-white);
