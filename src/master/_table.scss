@@ -17,7 +17,8 @@
     color: var(--nmr-color-text);
     background: var(--nmr-color-gray-400);
     & .header,
-    & .header_plus {
+    & .header_plus,
+    & .headerWithCheckbox {
         background: unset;
         border-bottom: unset;
         color: var(--nmr-color-text);

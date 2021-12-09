@@ -407,7 +407,7 @@ ul.menu li.menu-item {
   color: var(--nmr-color-text);
   background: var(--nmr-color-gray-400);
 }
-.table_body .header, .table_body .header_plus {
+.table_body .header, .table_body .header_plus, .table_body .headerWithCheckbox {
   background: unset;
   border-bottom: unset;
   color: var(--nmr-color-text);
