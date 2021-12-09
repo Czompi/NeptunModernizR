@@ -101,6 +101,10 @@ input:checked[type=radio] {
         background-color: unset;
         background-image: unset;
     }
+    & .contextitem,
+    & .contextitem_disabled {
+        border: unset;
+    }
     & .contextitem_disabled {
         background: unset;
         background-color: unset;

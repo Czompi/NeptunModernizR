@@ -142,6 +142,9 @@ input:checked[type=radio] {
   background-color: unset;
   background-image: unset;
 }
+.contextdiv .contextitem, .contextdiv .contextitem_disabled {
+  border: unset;
+}
 .contextdiv .contextitem_disabled {
   background: unset;
   background-color: unset;
