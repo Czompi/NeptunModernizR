@@ -42,7 +42,7 @@
     background: var(--nmr-color-primary-100);
 }
 #mb1 > li.menu-parent {
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: var(--nmr-color-text);
 }
 #mb1 .menu {
     -webkit-text-fill-color: unset;
