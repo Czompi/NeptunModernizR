@@ -17,7 +17,7 @@
         background-image: unset;
     }
     & .sp_headerseparator {
-        border-right: 1px solid var(--nmr-color-text);
+        border-right: 1px solid var(--nmr-color-text-white);
     }
     & .sp_header_left,
     & .sp_header_midle,     // rly?! a typo in a production software?!
@@ -66,13 +66,16 @@
 
     & .sp_headertitle,
     & .sp_headerconditions {
-        color: unset;
+        color: var(--nmr-color-text-white);
         font-family: unset;
         font-weight: normal;
     }
     & .grid_searchbutton, & .button {
         font-weight: unset;
         font-family: unset;
+        box-shadow: unset;
+        -moz-box-shadow: unset;
+        -webkit-box-shadow: unset;
         border: unset;
         background: var(--nmr-color-primary-100);
     }

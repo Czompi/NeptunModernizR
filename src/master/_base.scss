@@ -1,7 +1,7 @@
 
 html {
     background-color: var(--nmr-color-gray-100);
-    color: var(--nmr-color-text-white);
+    color: var(--nmr-color-text);
     font-family: var(--nmr-font-primary);
 }
 * {
@@ -130,3 +130,4 @@ input:checked[type=radio] {
         background-color: var(--nmr-color-primary-100);
     }
 }
+

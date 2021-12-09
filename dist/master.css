@@ -1,10 +1,10 @@
 @import 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap';
 /* #region Root */
 :root {
-  --nmr-color-gray-100: hsl(330, 0%, 90%);
-  --nmr-color-gray-200: hsl(330, 0%, 80%);
-  --nmr-color-gray-300: hsl(330, 0%, 70%);
-  --nmr-color-gray-400: hsl(330, 0%, 60%);
+  --nmr-color-gray-100: hsl(330, 0%, 100%);
+  --nmr-color-gray-200: hsl(330, 0%, 95%);
+  --nmr-color-gray-300: hsl(330, 0%, 90%);
+  --nmr-color-gray-400: hsl(330, 0%, 85%);
   --nmr-color-gray-500: hsl(330, 0%, 50%);
   --nmr-color-gray-600: hsl(330, 0%, 40%);
   --nmr-color-gray-700: hsl(330, 0%, 30%);
@@ -27,7 +27,7 @@
 /* #region Base */
 html {
   background-color: var(--nmr-color-gray-100);
-  color: var(--nmr-color-text-white);
+  color: var(--nmr-color-text);
   font-family: var(--nmr-font-primary);
 }
 
@@ -249,7 +249,7 @@ table.Gadget .GadgetFooterMenu > * {
 /* #region Navbar */
 .top_training,
 .top_logout {
-  color: var(--nmr-color-text-white);
+  color: var(--nmr-color-text);
 }
 
 .top_menu_wrapper {
@@ -389,6 +389,10 @@ ul.menu li.menu-item {
   font-family: unset;
 }
 
+.mainFunctionCommand {
+  color: unset;
+}
+
 /* #endregion */
 /* #region Table */
 .grid_pagerrow .grid_pagerrow_left, .grid_pagerrow .grid_topfunctionpanel, .grid_pagerrow .grid_pagerpanel, .grid_pagerrow .grid_pagerrow_right {
@@ -458,7 +462,7 @@ ul.menu li.menu-item {
 }
 
 .footer_menu a {
-  color: var(--nmr-color-text-white);
+  color: var(--nmr-color-text);
 }
 
 /* #endregion */
@@ -487,7 +491,7 @@ ul.menu li.menu-item {
 }
 
 .modalpanel_header_caption {
-  color: var(--nmr-color-text-white);
+  color: var(--nmr-color-text);
 }
 
 .modalbody {
@@ -511,7 +515,7 @@ ul.menu li.menu-item {
   background-image: unset;
 }
 .searchpanel .sp_headerseparator {
-  border-right: 1px solid var(--nmr-color-text);
+  border-right: 1px solid var(--nmr-color-text-white);
 }
 .searchpanel .sp_header_left, .searchpanel .sp_header_midle, .searchpanel .sp_header_right {
   background: var(--nmr-color-primary-100);
@@ -548,13 +552,16 @@ ul.menu li.menu-item {
   font-weight: normal;
 }
 .searchpanel .sp_headertitle, .searchpanel .sp_headerconditions {
-  color: unset;
+  color: var(--nmr-color-text-white);
   font-family: unset;
   font-weight: normal;
 }
 .searchpanel .grid_searchbutton, .searchpanel .button {
   font-weight: unset;
   font-family: unset;
+  box-shadow: unset;
+  -moz-box-shadow: unset;
+  -webkit-box-shadow: unset;
   border: unset;
   background: var(--nmr-color-primary-100);
 }
