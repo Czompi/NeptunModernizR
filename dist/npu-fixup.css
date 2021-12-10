@@ -1,0 +1,14 @@
+/* #region Root */
+:root {
+  --nmr-color-npu-subject-completed: #3A7200;
+}
+
+/* #endregion */
+/* #region Colors */
+#h_markbook_gridIndexEntry_bodytable tr.SubjectCompletedRow td {
+  background-color: var(--nmr-color-npu-subject-completed) !important;
+}
+
+/* #endregion */
+
+/*# sourceMappingURL=npu-fixup.css.map */
