@@ -1,3 +1,19 @@
 #h_markbook_gridIndexEntry_bodytable tr.SubjectCompletedRow td {
+    font-weight: normal;
+    font-family: unset;
+    
+    background-color: var(--nmr-color-npu-subject-completed) !important;
+}
+#h_addsubjects_gridSubjects_bodytable tr.Row1_Bold td, #Addsubject_course1_gridCourses_bodytable tr.Row1_sel td, #Addsubject_course1_gridCourses_grid_body_div tr.Row1_sel td, #Addsubject_course1_gridCourses_bodytable tr.Row1_Bold_sel td, #Addsubject_course1_gridCourses_grid_body_div tr.Row1_Bold_sel td, #h_addsubjects_gridSubjects_bodytable tr.context_selectedrow td {
+    font-weight: normal;
+    font-family: unset;
+    
+    background-color: var(--nmr-color-npu-subject-felvett) !important;
+    color: var(--nmr-color-text);
+}
+#h_addsubjects_gridSubjects_bodytable tr.npu_completed td, #h_addsubjects_gridSubjects_bodytable tr.context_selectedrow[data-completed] td {
+    font-weight: normal;
+    font-family: unset;
+    
     background-color: var(--nmr-color-npu-subject-completed) !important;
 }

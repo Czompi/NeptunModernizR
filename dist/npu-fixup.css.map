@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../src/npu-fixup.scss","../src/npu-fixup/_root.scss","../src/npu-fixup/_fix_colors.scss"],"names":[],"mappings":"AACA;ACDA;EACI;;;ADEJ;AAEA;AELA;EACI;;;AFMJ","file":"npu-fixup.css"}
+{"version":3,"sourceRoot":"","sources":["../src/npu-fixup.scss","../src/npu-fixup/_root.scss","../src/npu-fixup/_fix_colors.scss"],"names":[],"mappings":"AACA;ACDA;EACI;EACA;EACA;;;ADAJ;AAEA;AELA;EACI;EACA;EAEA;;;AAEJ;EACI;EACA;EAEA;EACA;;;AAEJ;EACI;EACA;EAEA;;;AFVJ","file":"npu-fixup.css"}
