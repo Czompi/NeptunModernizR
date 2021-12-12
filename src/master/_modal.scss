@@ -50,22 +50,6 @@
     background: unset;
     color: unset;
 }
-input[type=button],
-input[type=submit] {
-    border: unset !important;
-    border-radius: unset;
-    box-shadow:unset;
-    -webkit-box-shadow: unset;
-    margin: .2rem;
-    color: var(--nmr-color-text-white);
-    background-color: var(--nmr-color-primary-100) !important;
-    &:disabled {
-        background-color: var(--nmr-color-gray-500) !important;
-    }
-    &:hover:not(:disabled) {
-        background-color: var(--nmr-color-primary-200) !important;
-    }
-}
 .readmessage_editor {
     background: var(--nmr-color-gray-300);
     border: unset;

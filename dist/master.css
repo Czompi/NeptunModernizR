@@ -178,6 +178,257 @@ input:checked[type=radio] {
 }
 
 /* #endregion */
+/* #region Table */
+.login_news_more a,
+input[type=button],
+input[type=submit] {
+  border: unset !important;
+  border-radius: unset;
+  box-shadow: unset;
+  -webkit-box-shadow: unset;
+  margin: 0.2rem;
+  color: var(--nmr-color-text-white);
+  background-color: var(--nmr-color-primary-100) !important;
+  padding: 0.75em 0.5em;
+  border-radius: 0.25rem;
+  font-family: unset;
+  cursor: pointer;
+}
+.login_news_more a:disabled,
+input[type=button]:disabled,
+input[type=submit]:disabled {
+  background-color: var(--nmr-color-gray-500) !important;
+}
+.login_news_more a:hover:not(:disabled),
+input[type=button]:hover:not(:disabled),
+input[type=submit]:hover:not(:disabled) {
+  background-color: var(--nmr-color-primary-200) !important;
+}
+
+input:not([type=button]):not([type=submit]):not([type=image]) {
+  display: block;
+  width: 100%;
+  padding: 0.2em 0.5em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  input:not([type=button]):not([type=submit]):not([type=image]) {
+    transition: none;
+  }
+}
+input:not([type=button]):not([type=submit]):not([type=image])[type=file] {
+  overflow: hidden;
+}
+input:not([type=button]):not([type=submit]):not([type=image])[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+input:not([type=button]):not([type=submit]):not([type=image]):focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+select {
+  font-weight: unset;
+  font-family: unset;
+  display: block;
+  width: 100%;
+  padding: 0.2em 2em 0.2rem 0.5em;
+  -moz-padding-start: calc(0.5rem - 3px);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  select {
+    transition: none;
+  }
+}
+select:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+select[multiple], select[size]:not([size="1"]) {
+  padding-right: 0.75rem;
+  background-image: none;
+}
+select:disabled {
+  background-color: #e9ecef;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #212529;
+}
+
+.login_left_image .no_style {
+  width: 100% !important;
+}
+
+/* #endregion */
+/* #region Base */
+.login_button,
+.login_button_td input[orgid=hallgato_default],
+.login_button_td input[orgid=oktato_default] {
+  background-image: unset;
+  width: unset;
+  height: unset;
+}
+
+.login_label {
+  color: unset;
+  font-family: unset;
+}
+
+.login_content_separator,
+.login_background_table {
+  background-color: unset;
+}
+
+.formcss table[orgid=hallgato_default],
+.tr_LeftImage td[orgid=hallgato_default],
+.login_right_side div[orgid=hallgato_default],
+.tr_Footer td[orgid=hallgato_default],
+.formcss table[orgid=oktato_default],
+.tr_LeftImage td[orgid=oktato_default],
+.login_right_side div[orgid=oktato_default],
+.tr_Footer td[orgid=oktato_default] {
+  background: unset;
+}
+
+td.login_top_side > div {
+  width: unset !important;
+  height: unset !important;
+  border: unset;
+  text-align: unset !important;
+}
+
+#sr_detect {
+  display: none;
+}
+
+.login_content_news,
+.login_content_docs,
+.login_content_links,
+.login_links {
+  color: var(--nmr-color-text);
+}
+.login_content_news > img,
+.login_content_docs > img,
+.login_content_links > img,
+.login_links > img {
+  display: none;
+}
+
+.login_news_content,
+.login_news_date,
+.login_docs_date {
+  border: unset;
+  color: var(--nmr-color-text);
+}
+
+.login_news_subject a,
+.login_docs a {
+  color: var(--nmr-color-text);
+}
+.login_news_subject a:hover,
+.login_docs a:hover {
+  color: var(--nmr-color-primary-100);
+}
+
+.login_news_subject a, .login_news_subject label + a,
+.login_links a,
+.login_links label + a {
+  color: var(--nmr-color-primary-100);
+}
+.login_news_subject a:hover, .login_news_subject label + a:hover,
+.login_links a:hover,
+.login_links label + a:hover {
+  color: var(--nmr-color-primary-200);
+}
+
+.login_news_more a {
+  padding: 0.25rem;
+}
+
+#dataListNews {
+  border: unset !important;
+}
+#dataListNews .table_left {
+  border: unset !important;
+}
+#dataListNews .table_left tr {
+  padding-block: 0.4rem;
+  border: unset !important;
+  background-color: var(--nmr-color-gray-200);
+}
+
+.login_news_subject {
+  border: unset;
+}
+
+.login_right_side {
+  display: none;
+}
+
+.freeplaces {
+  color: var(--nmr-color-text);
+  font-family: var(--nmr-font-primary);
+}
+
+.login_logo {
+  background-position: 3.75rem 0px;
+}
+
+.login_button_td {
+  text-align: center;
+}
+
+.login_top_side span {
+  font-family: var(--nmr-font-primary);
+  font-style: normal;
+}
+
+.login_moduletype {
+  padding-left: unset;
+}
+
+.login_line {
+  background: unset;
+  border-bottom: 1px solid var(--nmr-color-text);
+}
+
+.login_news_subject,
+.login_news_date,
+.login_news_content,
+.login_news_more {
+  padding: 10px;
+}
+
+/* #endregion */
 /* #region Gadget */
 table.Gadget {
   width: 100% !important;
@@ -545,25 +796,6 @@ ul.menu li.menu-item {
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   background: unset;
   color: unset;
-}
-
-input[type=button],
-input[type=submit] {
-  border: unset !important;
-  border-radius: unset;
-  box-shadow: unset;
-  -webkit-box-shadow: unset;
-  margin: 0.2rem;
-  color: var(--nmr-color-text-white);
-  background-color: var(--nmr-color-primary-100) !important;
-}
-input[type=button]:disabled,
-input[type=submit]:disabled {
-  background-color: var(--nmr-color-gray-500) !important;
-}
-input[type=button]:hover:not(:disabled),
-input[type=submit]:hover:not(:disabled) {
-  background-color: var(--nmr-color-primary-200) !important;
 }
 
 .readmessage_editor {

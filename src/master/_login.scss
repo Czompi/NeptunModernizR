@@ -1,0 +1,131 @@
+.login_button,
+.login_button_td input[orgid="hallgato_default"],
+.login_button_td input[orgid="oktato_default"] {
+    background-image: unset;
+    width: unset;
+    height: unset;
+}
+.login_label {
+    color: unset;
+    font-family: unset;
+}
+.login_content_separator,
+.login_background_table {
+    background-color: unset;
+}
+
+.formcss table[orgid="hallgato_default"],
+.tr_LeftImage td[orgid="hallgato_default"],
+.login_right_side div[orgid="hallgato_default"],
+.tr_Footer td[orgid="hallgato_default"],
+
+.formcss table[orgid="oktato_default"],
+.tr_LeftImage td[orgid="oktato_default"],
+.login_right_side div[orgid="oktato_default"],
+.tr_Footer td[orgid="oktato_default"] {
+    background: unset;
+}
+td.login_top_side > div {
+    width: unset !important;
+    height: unset !important;
+    border: unset;
+    text-align: unset !important;
+}
+#sr_detect {
+    display: none;
+}
+.login_content_news,
+.login_content_docs,
+.login_content_links,
+.login_links {
+    color: var(--nmr-color-text);
+    & > img {
+        display: none;
+    }
+}
+.login_news_content,
+.login_news_date,
+.login_docs_date {
+    border: unset;
+    color: var(--nmr-color-text);
+}
+.login_news_subject,
+.login_docs
+{
+    & a {
+        color: var(--nmr-color-text);
+        &:hover{
+            color: var(--nmr-color-primary-100);
+        }
+    }
+}
+.login_news_subject,
+.login_links
+{
+    & a,
+    & label + a {
+        color: var(--nmr-color-primary-100);
+        &:hover{
+            color: var(--nmr-color-primary-200);
+        }
+    }
+}
+
+.login_news_more a {
+    padding: .25rem;
+}
+#dataListNews {
+    border: unset !important;
+    & .table_left {
+        border: unset !important;
+        & tr {
+            padding-block: .4rem;
+            border: unset !important;
+            background-color: var(--nmr-color-gray-200);
+        }
+    }
+}
+.login_news_subject {
+    border: unset;
+}
+// Fancy login kép & sw adatok
+.login_right_side {
+    display: none; // Temporarly disable login right side
+}
+// Adott hardveren szabad hely
+.freeplaces {
+    color: var(--nmr-color-text);
+    font-family: var(--nmr-font-primary);
+}
+// Egyetem logó
+.login_logo {
+    background-position: 3.75rem 0px;
+}
+// Bejelentkezés gomb mezője
+.login_button_td {
+    text-align: center;
+}
+// Egyetem neve
+.login_top_side span {
+    font-family: var(--nmr-font-primary);
+    font-style: normal;
+}
+
+// Felület adatai (típus: [hallgató, oktató, ...], hardver [hw123 (n)])
+.login_moduletype {
+    padding-left: unset;
+}
+
+// Felület adatai alatt lévő vonal (ami kép volt...)
+.login_line {
+    background: unset;
+    border-bottom: 1px solid var(--nmr-color-text);
+}
+
+
+.login_news_subject,
+.login_news_date,
+.login_news_content,
+.login_news_more {
+    padding: 10px;
+}
