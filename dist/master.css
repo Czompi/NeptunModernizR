@@ -442,6 +442,14 @@ ul.menu li.menu-item {
 .table_body .scrollablebody tr td span.link {
   color: var(--nmr-color-primary-100) !important;
 }
+.table_body .Row1_sel td {
+  color: unset;
+  background: var(--nmr-color-gray-300);
+}
+.table_body .Row1_sel:hover td {
+  color: unset;
+  background: var(--nmr-color-gray-400);
+}
 
 .tablebottom {
   color: var(--nmr-color-text);
@@ -512,6 +520,56 @@ ul.menu li.menu-item {
 
 .modalpanelcontent_noscrollbar_noheight {
   background-color: var(--nmr-color-gray-100);
+}
+
+.ui-widget-content {
+  padding: 0;
+  border: unset;
+  background: unset;
+  color: var(--nmr-color-text);
+  background-color: var(--nmr-color-gray-200);
+}
+
+.ui-widget-header {
+  background: unset;
+  border: unset;
+  border-radius: unset;
+  color: unset;
+  background-color: var(--nmr-color-gray-300);
+}
+
+.ui-dialog .ui-dialog-title {
+  overflow: unset;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: unset;
+  color: unset;
+}
+
+input[type=button],
+input[type=submit] {
+  border: unset !important;
+  border-radius: unset;
+  box-shadow: unset;
+  -webkit-box-shadow: unset;
+  margin: 0.2rem;
+  color: var(--nmr-color-text-white);
+  background-color: var(--nmr-color-primary-100) !important;
+}
+input[type=button]:disabled,
+input[type=submit]:disabled {
+  background-color: var(--nmr-color-gray-500) !important;
+}
+input[type=button]:hover:not(:disabled),
+input[type=submit]:hover:not(:disabled) {
+  background-color: var(--nmr-color-primary-200) !important;
+}
+
+.readmessage_editor {
+  background: var(--nmr-color-gray-300);
+  border: unset;
+  margin: unset;
 }
 
 /* #endregion */

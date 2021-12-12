@@ -39,6 +39,14 @@
     & .scrollablebody tr td span.link {
         color: var(--nmr-color-primary-100) !important;
     }
+    & .Row1_sel td {
+        color: unset;
+        background: var(--nmr-color-gray-300);
+    }
+    & .Row1_sel:hover td {
+        color: unset;
+        background: var(--nmr-color-gray-400);
+    }
 }
 .tablebottom {
     color: var(--nmr-color-text);
