@@ -54,6 +54,7 @@ table.Gadget .GadgetHeaderPanelTitle {
 }
 table.Gadget .GadgetMenuItem, .mainfunction_item {
     background: var(--nmr-color-primary-100);
+    padding: 3px 6px;
 }
 
 table.Gadget .GadgetMenuItem:hover, .mainfunction_item:hover {
