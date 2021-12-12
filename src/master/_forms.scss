@@ -1,6 +1,8 @@
 .login_news_more a,
 input[type=button],
-input[type=submit] {
+input[type=submit],
+.pagerlink,
+.pagerlink_disabled {
     border: unset !important;
     border-radius: unset;
     box-shadow:unset;

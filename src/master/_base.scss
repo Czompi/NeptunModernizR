@@ -143,3 +143,62 @@ input:checked[type=radio] {
     font-family: unset;
     font-weight: normal;
 }
+
+// Pagination
+.grid_pagerpanel > table tr {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: middle;
+
+    & .pagerlink_disabled,
+    & .pagerlink_disabled:hover {
+        background-color: var(--nmr-color-gray-500) !important;
+        opacity: .5;
+        cursor: no-drop;
+    }
+    & > .pagerlink,
+    & > .pagerlink_disabled {
+        padding: .5em;
+        background: unset;
+        position: relative;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        margin: 0px;
+    }
+
+    & > .pagerlink:hover,
+    & > .pagerlink:focus,
+    & > .pagerlink:active,
+    & > .pagerlink.active,
+    & > .pagerlink_disabled:hover,
+    & > .pagerlink_disabled:focus,
+    & > .pagerlink_disabled:active,
+    & > .pagerlink_disabled.active {
+        z-index: 1;
+    }
+
+
+    & > .pagerlink:not(:first-child),
+    & > &:not(:first-child) {
+        margin-left: -1px;
+    }
+
+    & > .pagerlink:first-child,
+    & > .pagerlink_disabled:first-child,
+    & > .pagerlink:not(:last-child),
+    & > .pagerlink_disabled:not(:last-child),
+    & > &:not(:last-child) > .pagerlink,
+    & > &:not(:last-child) > .pagerlink_disabled {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    & > .pagerlink:not(:first-child),
+    & > .pagerlink_disabled:not(:first-child),
+    & > .pagerlink:nth-child(n + 1):not(:first-child),
+    & > .pagerlink_disabled:nth-child(n + 1):not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}

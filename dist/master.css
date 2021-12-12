@@ -177,11 +177,47 @@ input:checked[type=radio] {
   font-weight: normal;
 }
 
+.grid_pagerpanel > table tr {
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.grid_pagerpanel > table tr .pagerlink_disabled, .grid_pagerpanel > table tr .pagerlink_disabled:hover {
+  background-color: var(--nmr-color-gray-500) !important;
+  opacity: 0.5;
+  cursor: no-drop;
+}
+.grid_pagerpanel > table tr > .pagerlink, .grid_pagerpanel > table tr > .pagerlink_disabled {
+  padding: 0.5em;
+  background: unset;
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: 0px;
+}
+.grid_pagerpanel > table tr > .pagerlink:hover, .grid_pagerpanel > table tr > .pagerlink:focus, .grid_pagerpanel > table tr > .pagerlink:active, .grid_pagerpanel > table tr > .pagerlink.active, .grid_pagerpanel > table tr > .pagerlink_disabled:hover, .grid_pagerpanel > table tr > .pagerlink_disabled:focus, .grid_pagerpanel > table tr > .pagerlink_disabled:active, .grid_pagerpanel > table tr > .pagerlink_disabled.active {
+  z-index: 1;
+}
+.grid_pagerpanel > table tr > .pagerlink:not(:first-child), .grid_pagerpanel > table tr > .grid_pagerpanel > table tr:not(:first-child) {
+  margin-left: -1px;
+}
+.grid_pagerpanel > table tr > .pagerlink:first-child, .grid_pagerpanel > table tr > .pagerlink_disabled:first-child, .grid_pagerpanel > table tr > .pagerlink:not(:last-child), .grid_pagerpanel > table tr > .pagerlink_disabled:not(:last-child), .grid_pagerpanel > table tr > .grid_pagerpanel > table tr:not(:last-child) > .pagerlink, .grid_pagerpanel > table tr > .grid_pagerpanel > table tr:not(:last-child) > .pagerlink_disabled {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.grid_pagerpanel > table tr > .pagerlink:not(:first-child), .grid_pagerpanel > table tr > .pagerlink_disabled:not(:first-child), .grid_pagerpanel > table tr > .pagerlink:nth-child(n+1):not(:first-child), .grid_pagerpanel > table tr > .pagerlink_disabled:nth-child(n+1):not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 /* #endregion */
 /* #region Table */
 .login_news_more a,
 input[type=button],
-input[type=submit] {
+input[type=submit],
+.pagerlink,
+.pagerlink_disabled {
   border: unset !important;
   border-radius: unset;
   box-shadow: unset;
@@ -196,12 +232,16 @@ input[type=submit] {
 }
 .login_news_more a:disabled,
 input[type=button]:disabled,
-input[type=submit]:disabled {
+input[type=submit]:disabled,
+.pagerlink:disabled,
+.pagerlink_disabled:disabled {
   background-color: var(--nmr-color-gray-500) !important;
 }
 .login_news_more a:hover:not(:disabled),
 input[type=button]:hover:not(:disabled),
-input[type=submit]:hover:not(:disabled) {
+input[type=submit]:hover:not(:disabled),
+.pagerlink:hover:not(:disabled),
+.pagerlink_disabled:hover:not(:disabled) {
   background-color: var(--nmr-color-primary-200) !important;
 }
 
