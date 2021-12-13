@@ -35,6 +35,7 @@
         background: unset;
         color: var(--nmr-color-text);
         border-bottom-color:rgba(0, 0, 0, 0.25);
+        border: 0px solid teal;
     }
     & .scrollablebody tr td span.link {
         color: var(--nmr-color-primary-100) !important;
@@ -60,4 +61,10 @@
         background: unset;
         color: var(--nmr-color-text);
     }
+}
+.subrow_td {
+    background: unset;
+}
+.subtable {
+    background: var(--nmr-color-gray-500);
 }

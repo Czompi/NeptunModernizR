@@ -1,0 +1,70 @@
+.main_header_l,
+.main_header_m,
+.main_header_r {
+    background: unset;
+    height: unset;
+    width: unset;
+}
+.main_table {
+    background-color: var(--nmr-color-gray-200);
+}
+.main_header_l_table,
+.main_header_m_table,
+.main_header_r_table {
+    height: unset;
+}
+.NeptunChooserSelected {
+    background: unset;
+    width: unset;
+    height: unset;
+    background-color: var(--nmr-color-primary-300);
+    color: var(--nmr-color-text-white);
+    a {
+        color: unset;
+    }
+}
+.KollabChooser {
+    background: unset;
+    width: unset;
+    height: unset;
+    background-color: var(--nmr-color-gray-300);
+    color: var(--nmr-color-text);
+    & a,
+    & a:hover {
+        color: unset;
+    }
+
+    &:hover {
+        background: unset;
+        width: unset;
+        height: unset;
+        background-color: var(--nmr-color-primary-100);
+        color: var(--nmr-color-text);
+        a,
+        a:hover {
+            color: unset;
+        }
+    }
+}
+#upChooser {
+    background-color: var(--nmr-color-gray-300);
+}
+.chooser_first_td {
+    display: none;
+}
+.langskinpartially {
+    top: 60px;
+    min-width: 500px;
+    & > * {
+        float: right !important;
+    }
+}
+.main_header_l {
+    width: 100%;
+}
+.main_header_r {
+    width: auto;
+}
+.main_header_r_table_skin{
+    width: auto;
+}
