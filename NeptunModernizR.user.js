@@ -11,7 +11,7 @@
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
 // @grant          GM.info
-// @version        0.33
+// @version        0.34
 // @author         Czompi Software
 // @description    12/03/2021, 1:13:00 AM
 // @downloadURL    https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/NeptunModernizR.user.js
@@ -28,8 +28,9 @@ const help_link = $('#lnkHelp')[0];
 // https://github.com/Balint66/NeptunSkins/blob/8760eb86ab4aafb3e0a9263451f83f24e792d9d4/neptune.user.js#L77
 function getCurrentTheme() {
   var head = $('head')[0];
-  var theme = head.innerHTML.match(/(?<=App_Themes\/)Skin_Neptun_\S+(?=\/(s|S)kin_(n|N)eptun_\S+\.css)/)[0];
-    
+  var themeMatches = head.innerHTML.match(/(?<=App_Themes\/)Skin_Neptun_\S+(?=\/(s|S)kin_(n|N)eptun_\S+\.css)/);
+  if(themeMatches == null) return "blue";
+  var theme = themeMatches[0]
   var currTheme = theme.split('_').slice(-1); // https://github.com/Balint66/NeptunSkins/blob/8760eb86ab4aafb3e0a9263451f83f24e792d9d4/neptune.user.js#L69
   let currentTheme = `${currTheme}`.toLowerCase();
   switch (currentTheme) {
