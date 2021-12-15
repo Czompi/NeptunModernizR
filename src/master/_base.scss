@@ -241,3 +241,6 @@ h2 {
     color: var(--nmr-color-text-white) !important;
     background-color: var(--nmr-color-primary-300) !important;
 }
+.scrollablebody td {
+    font-family: unset;
+}
