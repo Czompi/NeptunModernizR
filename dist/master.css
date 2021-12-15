@@ -259,6 +259,10 @@ h2 {
   background-color: var(--nmr-color-primary-300) !important;
 }
 
+.scrollablebody td {
+  font-family: unset;
+}
+
 /* #endregion */
 /* #region Table */
 .login_news_more a,
