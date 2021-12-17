@@ -20,19 +20,26 @@
   font-weight: normal;
   font-family: unset;
   background-color: var(--nmr-color-npu-subject-completed) !important;
+  color: unset;
 }
 
 #h_addsubjects_gridSubjects_bodytable tr.Row1_Bold td, #Addsubject_course1_gridCourses_bodytable tr.Row1_sel td, #Addsubject_course1_gridCourses_grid_body_div tr.Row1_sel td, #Addsubject_course1_gridCourses_bodytable tr.Row1_Bold_sel td, #Addsubject_course1_gridCourses_grid_body_div tr.Row1_Bold_sel td, #h_addsubjects_gridSubjects_bodytable tr.context_selectedrow td {
   font-weight: normal;
   font-family: unset;
   background-color: var(--nmr-color-npu-subject-felvett) !important;
-  color: var(--nmr-color-text);
+  color: var(--nmr-color-text) !important;
 }
 
 #h_addsubjects_gridSubjects_bodytable tr.npu_completed td, #h_addsubjects_gridSubjects_bodytable tr.context_selectedrow[data-completed] td {
   font-weight: normal;
   font-family: unset;
   background-color: var(--nmr-color-npu-subject-completed) !important;
+  color: unset;
+}
+
+#h_exams_gridExamList_bodytable tr.gridrow_blue td {
+  background-color: var(--nmr-color-npu-subject-felvett) !important;
+  color: var(--nmr-color-text) !important;
 }
 
 /* #endregion */

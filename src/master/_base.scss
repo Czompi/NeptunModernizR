@@ -244,3 +244,8 @@ h2 {
 .scrollablebody td {
     font-family: unset;
 }
+.color-box {
+    background: var(--color);
+    width: 1em;
+    height: 1em;
+}

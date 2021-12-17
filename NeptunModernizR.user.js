@@ -11,7 +11,7 @@
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
 // @grant          GM.info
-// @version        0.35
+// @version        0.36
 // @author         Czompi Software
 // @description    12/03/2021, 1:13:00 AM
 // @downloadURL    https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/NeptunModernizR.user.js
@@ -54,7 +54,36 @@ function getCurrentTheme() {
 function getCurrentLang() {
   return (help_link.href || 'help/hweb_de.pdf').match(/(?<=help\/hweb_)\S+(?=\.pdf)/)[0];
 }
+function getLangSelector() {
+    $(".top_menu_right").empty();
+    $(".top_menu_right").append("<div class=\"btn-group\">\r\n\t" +
+        "<button class=\"btn btn-secondary btn-sm dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Small button</button>"+
+        "<ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\">\r\n\t\t" +
+            "<li><a class=\"dropdown-item\" onclick=\"javascript:SkinChoose('Skin_Neptun_Pink');\">\r\n\t\t\t"+
+            	"<div class=\"color-box\" style=\"--color: #E20074;\"></div>\r\n\t\t"+
+            "</a></li>\r\n\t\t" +
+            "<li><a class=\"dropdown-item\" onclick=\"javascript:SkinChoose('Skin_Neptun_Gfx');\">\r\n\t\t\t"+
+            	"<div class=\"color-box\" style=\"--color: #3B49C9;\"></div>\r\n\t\t"+
+            "</a></li>\r\n\t\t" +
+            "<li><a class=\"dropdown-item\" onclick=\"javascript:SkinChoose('Skin_Neptun_Lime');\">\r\n\t\t\t"+
+            	"<div class=\"color-box\" style=\"--color: #8FCC00;\"></div>\r\n\t\t"+
+            "</a></li>\r\n\t\t" +
+            "<li><a class=\"dropdown-item\" onclick=\"javascript:SkinChoose('Skin_Neptun_Orange');\">\r\n\t\t\t"+
+            	"<div class=\"color-box\" style=\"--color: #FBA04B;\"></div>\r\n\t\t"+
+            "</a></li>\r\n\t\t" +
+            "<li><a class=\"dropdown-item\" onclick=\"javascript:SkinChoose('Skin_Neptun_Classic');\">\r\n\t\t\t"+
+            	"<div class=\"color-box\" style=\"--color: #783F04;\"></div>\r\n\t\t"+
+            "</a></li>\r\n\t\t" +
+            "<li><a class=\"dropdown-item\" onclick=\"javascript:SkinChoose('Skin_Neptun_NewYork');\">\r\n\t\t\t"+
+            	"<div class=\"color-box\" style=\"--color: #FF6347;\"></div>\r\n\t\t"+
+            "</a></li>\r\n\t\t" +
+            "<li><a class=\"dropdown-item\" onclick=\"javascript:SkinChoose('Skin_Neptun_PartiallySighted');\">\r\n\t\t\t"+
+				"<div class=\"color-box\" style=\"--color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,201,0,1) 100%);\"></div>\r\n\t\t"+
+			"</a></li>\r\n\t\t" +
+        "</ul>\r\n\t" +
 
+    "</div>");
+}
 var mastercss = document.createElement("link");
 mastercss.rel = "stylesheet";
 mastercss.type = "text/css";
@@ -70,12 +99,18 @@ themecss.rel = "stylesheet";
 themecss.type = "text/css";
 themecss.href = `${base_url}themes/${getCurrentTheme()}.css`;
 
+var bsscript = document.createElement("script");
+bsscript.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js";
+
 function
 init() {
   var h = document.querySelector('head');
   h.appendChild(mastercss);
   h.appendChild(npufixupcss);
   h.appendChild(themecss);
+  h.appendChild(bsscript);
+  
+  getLangSelector();
 }
 
 init();
