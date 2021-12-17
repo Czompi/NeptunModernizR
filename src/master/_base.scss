@@ -246,6 +246,7 @@ h2 {
 }
 .color-box {
     background: var(--color);
-    width: 1em;
+    display: inline-block;
     height: 1em;
+    width: 1em;
 }
