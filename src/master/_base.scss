@@ -244,10 +244,45 @@ h2 {
 .scrollablebody td {
     font-family: unset;
 }
+
+html, button, input, select, textarea {
+    font-family: unset;
+}
+
 .color-box {
     border: 1px solid var(--nmr-color-text);
     background: var(--color);
     display: inline-block;
     height: 1em;
     width: 1em;
+}
+.btn {
+    text-shadow: unset;
+    -webkit-text-shadow: unset;
+    -moz-text-shadow: unset;
+    box-shadow: unset;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    background: unset;
+    background-image: unset;
+    background-color: var(--nmr-color-gray-400);
+    color: var(--nmr-color-text);
+    border: 0px solid red;
+}
+.btn:hover, .btn:focus,
+.btn.active, .btn:active {
+    background: unset;
+    background-image: unset;
+}
+.btn:hover, .btn:focus {
+    color: var(--nmr-color-text);
+    background-color: var(--nmr-color-gray-500);
+}
+
+.btn.active, .btn:active {
+    color: var(--nmr-color-text);
+    background-color: var(--nmr-color-gray-600);
+}
+.langskinpartially {
+    display: none;
 }
