@@ -11,7 +11,7 @@
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
 // @grant          GM.info
-// @version        0.39
+// @version        0.40
 // @author         Czompi Software
 // @description    12/03/2021, 1:13:00 AM
 // @downloadURL    https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/NeptunModernizR.user.js
@@ -78,9 +78,10 @@ function getLangSelector() {
             "<li><a class=\"dropdown-item" + (ct.toLowerCase() == "tomato" ? " active" : "") + "\" onclick=\"javascript:SkinChoose('Skin_Neptun_NewYork');\">\r\n\t\t\t"+
             	"<span class=\"color-box\" style=\"--color: #FF6347;\"></span> Tomato\r\n\t\t"+
             "</a></li>\r\n\t\t" +
-            "<li><a class=\"dropdown-item" + (ct.toLowerCase() == "partiallysighted" ? " active" : "") + "\" onclick=\"javascript:SkinChoose('Skin_Neptun_PartiallySighted');\">\r\n\t\t\t"+
+			"<li><hr class=\"dropdown-divider\"></li>\r\n\t\t"+
+			"<li><a class=\"dropdown-item" + (ct.toLowerCase() == "partiallysighted" ? " active" : "") + "\" onclick=\"javascript:SkinChoose('Skin_Neptun_PartiallySighted');\">\r\n\t\t\t"+
 				"<span class=\"color-box\" style=\"--color: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(255,201,0,1) 100%);\"></span> Partially sighted\r\n\t\t"+
-			"</a></li>\r\n\t\t" +
+			"</a></li>\r\n\t" +
         "</ul>\r\n\t" +
 
     "</div>");
