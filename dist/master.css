@@ -898,7 +898,9 @@ select:-moz-focusring {
 
 .login_content_separator,
 .login_background_table {
+  background: unset;
   background-color: unset;
+  background-image: unset;
 }
 
 .formcss table[orgid=hallgato_default],
