@@ -265,6 +265,7 @@ h2 {
 }
 
 .color-box {
+  border: 1px solid var(--nmr-color-text);
   background: var(--color);
   display: inline-block;
   height: 1em;
@@ -300,6 +301,7 @@ h2 {
 }
 
 .dropdown-menu {
+  text-decoration: none;
   position: absolute;
   z-index: 1000;
   display: none;
@@ -535,7 +537,7 @@ h2 {
   font-weight: 400;
   color: var(--nmr-color-text);
   text-align: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
   white-space: nowrap;
   background-color: transparent;
   border: 0;

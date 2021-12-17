@@ -24,6 +24,7 @@
 }
 
 .dropdown-menu {
+  text-decoration: none;
   position: absolute;
   z-index: 1000;
   display: none;
@@ -237,7 +238,7 @@
   font-weight: 400;
   color: var(--nmr-color-text);
   text-align: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
