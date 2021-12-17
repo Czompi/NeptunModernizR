@@ -11,7 +11,7 @@
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
 // @grant          GM.info
-// @version        0.42
+// @version        0.43
 // @author         Czompi Software
 // @description    12/03/2021, 1:13:00 AM
 // @downloadURL    https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/NeptunModernizR.user.js
@@ -46,7 +46,6 @@ function getCurrentTheme() {
     default:
       break;
   }
-  console.log(currentTheme);
   return currentTheme;
 }
 
@@ -89,13 +88,13 @@ function getSelectors() {
     $(".top_menu_right").append("<div class=\"btn-group\">\r\n\t" +
         "<button class=\"btn btn-secondary btn-sm dropdown-toggle\" type=\"button\" id=\"languageDropdown\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Language</button>"+
         "<ul class=\"dropdown-menu\" aria-labelledby=\"languageDropdown\">\r\n\t\t" +
-            "<li><a class=\"dropdown-item" + (cl.toLowerCase() == "pink" ? " active" : "") + "\" alt=\"Magyar\" onclick=\"javascript:dochangeLanguage('0','1038');return false;\">\r\n\t\t\t"+
+            "<li><a class=\"dropdown-item" + (cl.toLowerCase() == "hu" ? " active" : "") + "\" alt=\"Magyar\" onclick=\"javascript:dochangeLanguage('0','1038');return false;\">\r\n\t\t\t"+
             	"Magyar\r\n\t\t"+
             "</a></li>\r\n\t\t" +
-            "<li><a class=\"dropdown-item" + (cl.toLowerCase() == "blue" ? " active" : "") + "\" alt=\"English\" onclick=\"javascript:dochangeLanguage('1','1033');return false;\">\r\n\t\t\t"+
+            "<li><a class=\"dropdown-item" + (cl.toLowerCase() == "en" ? " active" : "") + "\" alt=\"English\" onclick=\"javascript:dochangeLanguage('1','1033');return false;\">\r\n\t\t\t"+
             	"English\r\n\t\t"+
             "</a></li>\r\n\t\t" +
-            "<li><a class=\"dropdown-item" + (cl.toLowerCase() == "" ? " active" : "") + "\" alt=\"Deutsch\" onclick=\"javascript:dochangeLanguage('2','1031');return false;\">\r\n\t\t\t"+
+            "<li><a class=\"dropdown-item" + (cl.toLowerCase() == "de" ? " active" : "") + "\" alt=\"Deutsch\" onclick=\"javascript:dochangeLanguage('2','1031');return false;\">\r\n\t\t\t"+
             	"Deutsch\r\n\t\t"+
             "</a></li>\r\n\t\t" +
         "</ul>\r\n\t" +
