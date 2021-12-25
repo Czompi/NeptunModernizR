@@ -24,7 +24,9 @@ a:hover {
 .right_side_space {
     display: none;
 }
-
+fieldset {
+    border-width: 0px !important;
+}
 input[type=checkbox],
 input[type=radio] {
     width: 1rem;

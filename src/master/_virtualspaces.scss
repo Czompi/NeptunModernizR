@@ -1,0 +1,31 @@
+.sp_body,
+.sp_afterheader,
+.sdapanel,
+.sp_headerleftcorner,
+.sp_headerbody,
+.sp_headerrightcorner {
+    background: unset;
+    border: unset !important;
+    color: unset;
+}
+.sp_headerleftcorner,
+.sp_headerbody,
+.sp_headerrightcorner {
+    background-color: var(--nmr-color-primary-100);
+}
+
+.sdapanel {
+    background-color: var(--nmr-color-gray-300);
+}
+.sp_headertitle,
+.sp_headerconditions {
+    color: unset;
+    font-family: unset;
+    font-weight: unset;
+}
+.modernui .fg-color-grayLight {
+    color: unset !important;
+}
+.modernui .icon:hover i {
+    color: var(--nmr-color-primary-200) !important;
+}

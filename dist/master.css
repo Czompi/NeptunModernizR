@@ -58,6 +58,10 @@ a:hover {
   display: none;
 }
 
+fieldset {
+  border-width: 0px !important;
+}
+
 input[type=checkbox],
 input[type=radio] {
   width: 1rem;
@@ -1401,6 +1405,9 @@ ul.menu li.menu-item {
 .table_body .scrollablebody tr td span.link {
   color: var(--nmr-color-primary-100) !important;
 }
+.table_body .scrollablebody tr td span.link:hover {
+  color: var(--nmr-color-primary-200) !important;
+}
 .table_body .Row1_sel td {
   color: unset;
   background: var(--nmr-color-gray-300);
@@ -1427,6 +1434,24 @@ ul.menu li.menu-item {
 
 .subtable {
   background: var(--nmr-color-gray-500);
+}
+
+.rowsub,
+.rowsub:hover {
+  background: unset;
+}
+
+.boldLink {
+  color: unset;
+}
+
+.boldLink:hover {
+  color: var(--nmr-color-primary-100);
+}
+
+.scrollablebody tr:hover td span.grid_remove_favorite,
+.scrollablebody tr:hover td span.grid_remove_favorite:hover {
+  color: var(--nmr-color-primary-200);
 }
 
 /* #endregion */
@@ -1577,6 +1602,44 @@ ul.menu li.menu-item {
 .searchpanel .grid_searchbutton:hover, .searchpanel .button:hover {
   background: var(--nmr-color-primary-200);
   text-decoration: unset;
+}
+
+/* #endregion */
+/* #region Search */
+.sp_body,
+.sp_afterheader,
+.sdapanel,
+.sp_headerleftcorner,
+.sp_headerbody,
+.sp_headerrightcorner {
+  background: unset;
+  border: unset !important;
+  color: unset;
+}
+
+.sp_headerleftcorner,
+.sp_headerbody,
+.sp_headerrightcorner {
+  background-color: var(--nmr-color-primary-100);
+}
+
+.sdapanel {
+  background-color: var(--nmr-color-gray-300);
+}
+
+.sp_headertitle,
+.sp_headerconditions {
+  color: unset;
+  font-family: unset;
+  font-weight: unset;
+}
+
+.modernui .fg-color-grayLight {
+  color: unset !important;
+}
+
+.modernui .icon:hover i {
+  color: var(--nmr-color-primary-200) !important;
 }
 
 /* #endregion */

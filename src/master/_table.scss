@@ -39,6 +39,9 @@
     }
     & .scrollablebody tr td span.link {
         color: var(--nmr-color-primary-100) !important;
+        &:hover {
+            color: var(--nmr-color-primary-200) !important;
+        }
     }
     & .Row1_sel td {
         color: unset;
@@ -67,4 +70,18 @@
 }
 .subtable {
     background: var(--nmr-color-gray-500);
+}
+.rowsub,
+.rowsub:hover {
+    background: unset;
+}
+.boldLink {
+    color: unset;
+}
+.boldLink:hover {
+    color: var(--nmr-color-primary-100);
+}
+.scrollablebody tr:hover td span.grid_remove_favorite,
+.scrollablebody tr:hover td span.grid_remove_favorite:hover {
+    color: var(--nmr-color-primary-200);
 }
