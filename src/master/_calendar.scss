@@ -1,0 +1,194 @@
+
+/* calendar begin */
+
+/* a nextprev nyilak div-je azert, h az egesz td-re lehessen kattintani  */
+.divCalendar
+{	
+	width:100%;
+}
+
+.CalendarBody
+{
+	padding-left:5px;
+}
+
+.calendar_titlestyle {
+}
+.calendar {
+
+    & table td {
+        color: unset;
+        font-weight: unset;
+        font-family: unset;
+        background-color: transparent !important;
+    }
+
+    & table td a:link, 
+    & table td a:active,
+    & table td a:visited {
+        font-family: unset;
+    }
+
+    & table td a:hover {
+        font-family: unset;	
+    }
+
+    & th {
+        border-bottom:1px solid #868686 !important;
+    }
+
+    .calendar_othermonthdaystyle{
+        // background-color:Red !important;
+    }
+
+    & td {
+        font-family: unset;
+        font-weight: normal !important;
+    }
+
+    & .Selector {
+        
+    }
+
+    & .OtherMonthDay a {
+        color: var(--nmr-color-text) !important;
+        
+    }
+
+    & .SelectedDay a {
+        font-weight: unset;
+        font-family: unset;
+        color: var(--nmr-color-text) !important;
+    }
+
+    .calendar.calendar_titlestyle tdx {
+    }
+
+    & .NextPrev a:link,
+    & .NextPrev a:active,
+    & .NextPrev a:visited {
+        color:var(--nmr-color-text) !important;
+        font-size: 11px;
+        font-weight: bold !important;
+        font-family: unset;
+        text-decoration: none;
+    }
+
+    & .NextPrev a:hover {
+        color:var(--nmr-color-primary-100) !important;
+        font-weight: unset;
+        font-family: unset;
+    }
+
+    & .Selector {
+        
+    }
+
+
+    & .DayHeader {
+        background-color: var(--nmr-color-gray-900) !important;	
+        color: var(--nmr-color-text) !important;
+    }
+
+    & .Day {
+        background-color: var(--nmr-color-gray-700) !important;
+        color: var(--nmr-color-text) !important;
+    }
+
+    & .WeekendDay {
+        background-color: var(--nmr-color-gray-800) !important;
+        color: var(--nmr-color-text) !important;
+    }
+
+    & .OtherMonthDay {
+        text-align: center;
+        background-color: var(--nmr-color-gray-600) !important;
+        color: var(--nmr-color-text) !important;
+        font-weight:normal !important;
+        font-family: unset;
+    }
+
+    & .calendar_othermonthdaystyle a {
+        color: var(--nmr-color-text) !important;
+    }
+
+    & .TodayDay {
+        color: var(--nmr-color-primary-100) !important;
+        background-color: var(--nmr-color-gray-400) !important;
+        background-image: unset;
+        font-weight: unset !important;
+        font-family: unset;
+    }
+
+    & .TodayDay a:hover{
+        text-decoration: none;	
+    }
+
+    & .SelectedDay {
+        color: var(--nmr-color-text) !important;
+        background-color: var(--nmr-color-gray-400) !important;
+        background-image: unset;
+        font-weight: unset !important;
+        font-family: unset;
+    }
+
+    & .calendar_othermonthdaystyle:hover , 
+    & .Day:hover,
+    & .calendar_othermonthdaystyle:hover,
+    & .calendar_weekendDdystyle:hover
+    {
+        background-image: unset;
+        background-repeat: no-repeat;
+        color: var(--nmr-color-primary-200);
+        cursor:pointer;
+    }
+
+    /*& .day a:hover 
+    {
+        text-decoration: none;
+    }*/
+
+    & .Day a:link,
+    & .Day a:active,
+    & .Day a:visited,
+    & .Today a:link,
+    & .Today a:active,
+    & .Today a:visited,
+    & .WeekendDay a:link,
+    & .WeekendDay a:active,
+    & .WeekendDay a:visited,
+    & .calendar_weekendDdystyle a:link,
+    & .calendar_weekendDdystyle a:active,
+    & .calendar_weekendDdystyle a:visited
+    {
+        font-family: unset;
+        color: var(--nmr-color-text) !important;
+    }
+
+    & .OtherMonthDay a:link,
+    & .OtherMonthDay a:active,
+    & .OtherMonthDay a:visited {
+        font-family: unset;
+        color: var(--nmr-color-text) !important;
+    }
+
+    & .Day a:hover,
+    & .WeekendDay a:hover,
+    & .OtherMonthDay a:hover {
+        font-family: unset;
+        color: var(--nmr-color-primary-100);
+    }
+
+    & .SelectedDay a:link,
+    & .SelectedDay a:active,
+    & .SelectedDay a:visited {
+        font-family: unset;
+        color: var(--nmr-color-text) !important;
+        
+    }
+
+    & .SelectedDay a:hover {
+        font-family: unset;
+        color: var(--nmr-color-primary-100);
+    }
+}

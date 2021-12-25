@@ -342,6 +342,129 @@ div.messageBox div.messageBoxBottomRight {
 
 /* #endregion */
 /* #region Base */
+/* calendar begin */
+/* a nextprev nyilak div-je azert, h az egesz td-re lehessen kattintani  */
+.divCalendar {
+  width: 100%;
+}
+
+.CalendarBody {
+  padding-left: 5px;
+}
+
+.calendar {
+  /*& .day a:hover 
+  {
+      text-decoration: none;
+  }*/
+}
+.calendar table td {
+  color: unset;
+  font-weight: unset;
+  font-family: unset;
+  background-color: transparent !important;
+}
+.calendar table td a:link, .calendar table td a:active, .calendar table td a:visited {
+  font-family: unset;
+}
+.calendar table td a:hover {
+  font-family: unset;
+}
+.calendar th {
+  border-bottom: 1px solid #868686 !important;
+}
+.calendar td {
+  font-family: unset;
+  font-weight: normal !important;
+}
+.calendar .OtherMonthDay a {
+  color: var(--nmr-color-text) !important;
+}
+.calendar .SelectedDay a {
+  font-weight: unset;
+  font-family: unset;
+  color: var(--nmr-color-text) !important;
+}
+.calendar .NextPrev a:link, .calendar .NextPrev a:active, .calendar .NextPrev a:visited {
+  color: var(--nmr-color-text) !important;
+  font-size: 11px;
+  font-weight: bold !important;
+  font-family: unset;
+  text-decoration: none;
+}
+.calendar .NextPrev a:hover {
+  color: var(--nmr-color-primary-100) !important;
+  font-weight: unset;
+  font-family: unset;
+}
+.calendar .DayHeader {
+  background-color: var(--nmr-color-gray-900) !important;
+  color: var(--nmr-color-text) !important;
+}
+.calendar .Day {
+  background-color: var(--nmr-color-gray-700) !important;
+  color: var(--nmr-color-text) !important;
+}
+.calendar .WeekendDay {
+  background-color: var(--nmr-color-gray-800) !important;
+  color: var(--nmr-color-text) !important;
+}
+.calendar .OtherMonthDay {
+  text-align: center;
+  background-color: var(--nmr-color-gray-600) !important;
+  color: var(--nmr-color-text) !important;
+  font-weight: normal !important;
+  font-family: unset;
+}
+.calendar .calendar_othermonthdaystyle a {
+  color: var(--nmr-color-text) !important;
+}
+.calendar .TodayDay {
+  color: var(--nmr-color-primary-100) !important;
+  background-color: var(--nmr-color-gray-400) !important;
+  background-image: unset;
+  font-weight: unset !important;
+  font-family: unset;
+}
+.calendar .TodayDay a:hover {
+  text-decoration: none;
+}
+.calendar .SelectedDay {
+  color: var(--nmr-color-text) !important;
+  background-color: var(--nmr-color-gray-400) !important;
+  background-image: unset;
+  font-weight: unset !important;
+  font-family: unset;
+}
+.calendar .calendar_othermonthdaystyle:hover, .calendar .Day:hover, .calendar .calendar_othermonthdaystyle:hover, .calendar .calendar_weekendDdystyle:hover {
+  background-image: unset;
+  background-repeat: no-repeat;
+  color: var(--nmr-color-primary-200);
+  cursor: pointer;
+}
+.calendar .Day a:link, .calendar .Day a:active, .calendar .Day a:visited, .calendar .Today a:link, .calendar .Today a:active, .calendar .Today a:visited, .calendar .WeekendDay a:link, .calendar .WeekendDay a:active, .calendar .WeekendDay a:visited, .calendar .calendar_weekendDdystyle a:link, .calendar .calendar_weekendDdystyle a:active, .calendar .calendar_weekendDdystyle a:visited {
+  font-family: unset;
+  color: var(--nmr-color-text) !important;
+}
+.calendar .OtherMonthDay a:link, .calendar .OtherMonthDay a:active, .calendar .OtherMonthDay a:visited {
+  font-family: unset;
+  color: var(--nmr-color-text) !important;
+}
+.calendar .Day a:hover, .calendar .WeekendDay a:hover, .calendar .OtherMonthDay a:hover {
+  font-family: unset;
+  color: var(--nmr-color-primary-100);
+}
+.calendar .SelectedDay a:link, .calendar .SelectedDay a:active, .calendar .SelectedDay a:visited {
+  font-family: unset;
+  color: var(--nmr-color-text) !important;
+}
+.calendar .SelectedDay a:hover {
+  font-family: unset;
+  color: var(--nmr-color-primary-100);
+}
+
+/* #endregion */
+/* #region Base */
 .dropup,
 .dropend,
 .dropdown,
