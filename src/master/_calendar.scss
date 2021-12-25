@@ -34,20 +34,15 @@
     }
 
     & th {
-        border-bottom:1px solid #868686 !important;
+        border-width: 0px !important;
     }
 
-    .calendar_othermonthdaystyle{
-        // background-color:Red !important;
+    .calendar_othermonthdaystyle {
     }
 
     & td {
         font-family: unset;
         font-weight: normal !important;
-    }
-
-    & .Selector {
-        
     }
 
     & .OtherMonthDay a {
@@ -59,9 +54,6 @@
         font-weight: unset;
         font-family: unset;
         color: var(--nmr-color-text) !important;
-    }
-
-    .calendar.calendar_titlestyle tdx {
     }
 
     & .NextPrev a:link,
@@ -120,8 +112,8 @@
         font-family: unset;
     }
 
-    & .TodayDay a:hover{
-        text-decoration: none;	
+    & .TodayDay a:hover {
+        color: var(--nmr-color-primary-100) !important;
     }
 
     & .SelectedDay {
@@ -132,11 +124,10 @@
         font-family: unset;
     }
 
-    & .calendar_othermonthdaystyle:hover , 
+    & .calendar_othermonthdaystyle:hover, 
     & .Day:hover,
     & .calendar_othermonthdaystyle:hover,
-    & .calendar_weekendDdystyle:hover
-    {
+    & .calendar_weekendDdystyle:hover {
         background-image: unset;
         background-repeat: no-repeat;
         color: var(--nmr-color-primary-200);
@@ -159,8 +150,7 @@
     & .WeekendDay a:visited,
     & .calendar_weekendDdystyle a:link,
     & .calendar_weekendDdystyle a:active,
-    & .calendar_weekendDdystyle a:visited
-    {
+    & .calendar_weekendDdystyle a:visited {
         font-family: unset;
         color: var(--nmr-color-text) !important;
     }

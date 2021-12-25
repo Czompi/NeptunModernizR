@@ -371,7 +371,7 @@ div.messageBox div.messageBoxBottomRight {
   font-family: unset;
 }
 .calendar th {
-  border-bottom: 1px solid #868686 !important;
+  border-width: 0px !important;
 }
 .calendar td {
   font-family: unset;
@@ -427,7 +427,7 @@ div.messageBox div.messageBoxBottomRight {
   font-family: unset;
 }
 .calendar .TodayDay a:hover {
-  text-decoration: none;
+  color: var(--nmr-color-primary-100) !important;
 }
 .calendar .SelectedDay {
   color: var(--nmr-color-text) !important;
