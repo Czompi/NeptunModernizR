@@ -19,8 +19,23 @@
     background-color: var(--nmr-color-npu-subject-completed) !important;
     color: unset;
 }
-
 #h_exams_gridExamList_bodytable tr.gridrow_blue td {
     background-color: var(--nmr-color-npu-subject-felvett) !important;
+    color: var(--nmr-color-text) !important;
+}
+
+#h_exams_gridExamList_bodytable tr.npu_failed td {
+    background-color: var(--nmr-color-npu-subject-failed) !important;
+    color: var(--nmr-color-text) !important;
+}
+#h_advance_gridSubjects_bodytable tr.gridrow_green td, #h_advance_NonCurrTemp_bodytable tr.gridrow_green td {
+    background-color: var(--nmr-color-npu-subject-completed) !important;
+    color: var(--nmr-color-text) !important;
+}
+#h_advance_gridSubjects_bodytable tr:not(.gridrow_blue):not(.gridrow_green) td, #h_advance_NonCurrTemp_bodytable tr:not(.gridrow_blue):not(.gridrow_green) td {
+    background-color: var(--nmr-color-npu-subject-felvett) !important;
+    color: var(--nmr-color-text) !important;
+}
+#h_advance_gridSubjects_bodytable tr.gridrow_blue td, #h_advance_NonCurrTemp_bodytable tr.gridrow_blue td {
     color: var(--nmr-color-text) !important;
 }

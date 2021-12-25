@@ -310,6 +310,32 @@ html, button, input, select, textarea {
   display: none;
 }
 
+div.messageBox div.messageBoxTopLeft,
+div.messageBox div.messageBoxTop,
+div.messageBox div.messageBoxTopRight,
+div.messageBox div.messageBoxContent,
+div.messageBox div.messageBoxBottomLeft,
+div.messageBox div.messageBoxBottom,
+div.messageBox div.messageBoxBottomRight {
+  background: unset;
+  border: unset;
+  font-family: unset;
+  font-weight: unset;
+}
+
+.infopanel > .infopanel_icon {
+  display: none;
+}
+.infopanel > div.messageBox {
+  padding: unset;
+  background-color: var(--nmr-color-gray-300);
+  color: var(--nmr-color-text);
+}
+.infopanel > div.messageBox > div.messageBoxTopLeft, .infopanel > div.messageBox > div.messageBoxTop, .infopanel > div.messageBox > div.messageBoxTopRight, .infopanel > div.messageBox > div.messageBoxContent {
+  background-image: unset;
+  color: unset;
+}
+
 /* #endregion */
 /* #region Base */
 .dropup,
