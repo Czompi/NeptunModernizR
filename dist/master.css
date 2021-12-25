@@ -426,8 +426,11 @@ div.messageBox div.messageBoxBottomRight {
   font-weight: unset !important;
   font-family: unset;
 }
-.calendar .TodayDay a:hover {
+.calendar .TodayDay a {
   color: var(--nmr-color-primary-100) !important;
+}
+.calendar .TodayDay a:hover {
+  color: var(--nmr-color-primary-200) !important;
 }
 .calendar .SelectedDay {
   color: var(--nmr-color-text) !important;

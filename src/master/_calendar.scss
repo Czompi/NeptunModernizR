@@ -112,8 +112,11 @@
         font-family: unset;
     }
 
-    & .TodayDay a:hover {
+    & .TodayDay a {
         color: var(--nmr-color-primary-100) !important;
+    }
+    & .TodayDay a:hover {
+        color: var(--nmr-color-primary-200) !important;
     }
 
     & .SelectedDay {
