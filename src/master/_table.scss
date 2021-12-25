@@ -81,6 +81,9 @@
 .boldLink:hover {
     color: var(--nmr-color-primary-100);
 }
+.grid_remove_favorite {
+    color: var(--nmr-color-primary-100);
+}
 .scrollablebody tr:hover td span.grid_remove_favorite,
 .scrollablebody tr:hover td span.grid_remove_favorite:hover {
     color: var(--nmr-color-primary-200);
