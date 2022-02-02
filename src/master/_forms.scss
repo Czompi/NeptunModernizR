@@ -1,6 +1,6 @@
 .login_news_more a,
 input[type=button],
-input[type=submit],
+input[type=submit]:not(.orarendtervezo_nagyitas),
 .pagerlink,
 .pagerlink_disabled {
     border: unset !important;

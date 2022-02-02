@@ -920,7 +920,7 @@ div.messageBox div.messageBoxBottomRight {
 /* #region Table */
 .login_news_more a,
 input[type=button],
-input[type=submit],
+input[type=submit]:not(.orarendtervezo_nagyitas),
 .pagerlink,
 .pagerlink_disabled {
   border: unset !important;
@@ -937,14 +937,14 @@ input[type=submit],
 }
 .login_news_more a:disabled,
 input[type=button]:disabled,
-input[type=submit]:disabled,
+input[type=submit]:not(.orarendtervezo_nagyitas):disabled,
 .pagerlink:disabled,
 .pagerlink_disabled:disabled {
   background-color: var(--nmr-color-gray-500) !important;
 }
 .login_news_more a:hover:not(:disabled),
 input[type=button]:hover:not(:disabled),
-input[type=submit]:hover:not(:disabled),
+input[type=submit]:not(.orarendtervezo_nagyitas):hover:not(:disabled),
 .pagerlink:hover:not(:disabled),
 .pagerlink_disabled:hover:not(:disabled) {
   background-color: var(--nmr-color-primary-200) !important;
