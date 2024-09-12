@@ -6,4 +6,10 @@
   --nmr-color-primary-500: #15194C;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nmr-color-primary-100: #4493f8;
+  }
+}
+
 /*# sourceMappingURL=blue.css.map */
