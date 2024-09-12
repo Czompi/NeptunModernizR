@@ -11,10 +11,11 @@
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
 // @include        https://neptun.ejf.hu/ejfow/*
+// @exclude        https://*neptun*/*hallgatoing*/*
 // @grant          GM.info
-// @version        0.51
+// @version        0.52
 // @author         Czompi Software
-// @description    12/03/2021, 1:13:00 AM
+// @description    12/09/2024, 1:14:00 AM
 // @downloadURL    https://raw.githubusercontent.com/Czompi/NeptunModernizR/master/NeptunModernizR.user.js
 // @require        https://code.jquery.com/jquery-3.6.0.min.js
 // ==/UserScript==
